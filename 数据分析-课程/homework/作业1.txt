@@ -1,0 +1,102 @@
+total 46296
+-rw-r--r--@ 1 guchenxi  staff   3950336 Mar  7 22:14 (Oxford Science Publications) Glen Cowan-Statistical Data Analysis-Oxford University Press, USA (1998).pdf
+-rw-r--r--@ 1 guchenxi  staff  12526605 Feb 28 15:41 James, Frederick-Statistical methods in experimental physics-World Scientific (2006).pdf
+-rwxr--r--@ 1 guchenxi  staff      4883 Mar 12 20:53 Lec2_557103915.tgz
+-rw-r--r--@ 1 guchenxi  staff    729074 Feb 28 15:33 chapter00_811307778.pdf
+-rw-r--r--@ 1 guchenxi  staff   1064231 Feb 28 15:32 chapter01_184104285.pdf
+-rw-r--r--@ 1 guchenxi  staff   1000688 Mar  8 19:22 chapter02_475502967.pdf
+-rw-r--r--@ 1 guchenxi  staff         0 Mar 12 21:09 exe.txt
+-rw-r--r--@ 1 guchenxi  staff    518470 Mar  7 15:22 exercises.pdf
+-rw-r--r--@ 1 guchenxi  staff    131543 Mar  6 23:36 lecture_0_288209430.pdf
+-rw-r--r--@ 1 guchenxi  staff   1645933 Mar  6 23:36 lecture_1_Linux_183705964.pdf
+-rw-r--r--@ 1 guchenxi  staff    784118 Mar 12 20:53 lecture_2_Linux_C++_144807367.pdf
+-rw-r--r--@ 1 guchenxi  staff    204244 Mar  7 15:20 数据分析日历_2018_121806220.pdf
+/Users/guchenxi/Downloads/数据分析-课程
+(Oxford Science Publications) Glen Cowan-Statistical Data Analysis-Oxford University Press, USA (1998).pdf
+James, Frederick-Statistical methods in experimental physics-World Scientific (2006).pdf
+Lec2_557103915.tgz
+chapter00_811307778.pdf
+chapter01_184104285.pdf
+chapter02_475502967.pdf
+exe.txt
+exercises.pdf
+lecture_0_288209430.pdf
+lecture_1_Linux_183705964.pdf
+lecture_2_Linux_C++_144807367.pdf
+数据分析日历_2018_121806220.pdf
+  PID TTY           TIME CMD
+ 7302 ttys000    0:00.14 -bash
+MANPATH=/opt/local/share/man:
+TERM_PROGRAM=Apple_Terminal
+SHELL=/bin/bash
+TERM=xterm-256color
+TMPDIR=/var/folders/df/zytwdk4n7m919pn090nkcxx80000gn/T/
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.vmkkBJaE2i/Render
+TERM_PROGRAM_VERSION=400
+OLDPWD=/Users/guchenxi/Downloads
+TERM_SESSION_ID=6B1F710F-A571-4934-9409-C62D8792CAEF
+USER=guchenxi
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.2etUZFPSQo/Listeners
+PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin
+PWD=/Users/guchenxi/Downloads/数据分析-课程
+DBUS_LAUNCHD_SESSION_BUS_SOCKET=/private/tmp/com.apple.launchd.ab6KHqUOia/unix_domain_listener
+XPC_FLAGS=0x0
+XPC_SERVICE_NAME=0
+SHLVL=1
+HOME=/Users/guchenxi
+LOGNAME=guchenxi
+LC_CTYPE=UTF-8
+DISPLAY=/private/tmp/com.apple.launchd.aj1505yvPJ/org.macosforge.xquartz:0
+_=/usr/bin/env
+Mon Mar 12 21:21:02 CST 2018
+/Users/guchenxi/Downloads/数据分析-课程
+9,10c9,10
+< "Where the bus is running normally the traffic light sequence will be
+< absolutely as it is.”qwe
+---
+> "Where the bus is running normally the traffic light sequence will be absolutely as it is.”
+> 
+article.txt: UTF-8 Unicode text
+(Oxford
+Science
+Publications)
+Glen
+Cowan-Statistical
+Data
+Analysis-Oxford
+University
+Press,
+USA
+(1998).pdf
+James,
+Frederick-Statistical
+methods
+in
+experimental
+physics-World
+Scientific
+(2006).pdf
+Lec2_557103915.tgz
+article.txt
+article1.txt
+article1.txt~
+chapter00_811307778.pdf
+chapter01_184104285.pdf
+chapter02_475502967.pdf
+exe.txt
+exercises.pdf
+fool
+lecture_0_288209430.pdf
+lecture_1_Linux_183705964.pdf
+lecture_2_Linux_C++_144807367.pdf
+script.py
+script.py~
+“testDir”1
+“testDir”2
+“testDir”3
+“testDir”4
+数据分析日历_2018_121806220.pdf
+““testDir”1 exist!!“
+““testDir”2 exist!!“
+““testDir”3 exist!!“
+““testDir”4 exist!!“

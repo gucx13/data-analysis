@@ -1,0 +1,134 @@
+
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage{amsmath,amssymb}
+\usepackage{fancyhdr}  
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\pagestyle{fancy}  
+\fancyhead{} % clear all fields  
+\fancyhead[R]{Data Analysis}  
+\fancyhead[L]{Chenxi Gu\\ 2017311017} 
+\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\footrulewidth}{0.4pt} 
+
+
+
+\title {chapter 2}
+\author{Chenxi Gu\\2017311017}
+
+\date{\today}
+
+\maketitle
+\section{2.1}
+\begin{equation}
+\begin{aligned}
+\sigma^2_k&=\sum_{i,j=1}^MV_{ij}\\
+&=\sum_{i,j=1}^M(\delta_{ij}n_{tot}p_i(1-p_i)+(\delta_{ij}-1)p_ip_jn_{tot})\\
+&=\sum_{i=1}^M(n_{tot}p_i(1-p_i)-p_i(p_0-p_i)n_{tot})\\
+&=n_{tot}(p_0-p_0^2)\\
+\end{aligned}
+\end{equation}
+While $p_0=\sum_{i=1}^Mp_i$
+
+
+\section{2.2}
+\begin{equation}
+\begin{aligned}
+&E[\frac{1}{x}]=\int^{\beta}_{\alpha}\frac{In(\beta)-In(\alpha)}{\beta-\alpha}=In(2)\\
+&\frac{1}{E[x]}=\frac{2}{\beta+\alpha}=\frac{2}{3}
+\end{aligned}
+\end{equation}
+
+\section{2.3}
+(a)
+\begin{equation}
+F(x)=\int^x_0f(x)dx=1-e^{-\frac{x}{\xi}}
+\end{equation}
+(b)
+\begin{equation}
+P(x\le x^{'})=F(x^{'})=1-e^{-\frac{x^{'}}{\xi}}
+\end{equation}
+\begin{equation}
+P(x\le x^{'}+x_0|x\ge x_0)=\frac{P(x_0\le x\le x^{'}+x_0)}{P(x\ge x_0)}=\frac{e^{-\frac{x_0}{\xi}}-e^{-\frac{x_0+x^{'}}{\xi}}}{e^{-\frac{x_0}{\xi}}}=1-e^{-\frac{x^{'}}{\xi}}
+\end{equation}
+(c)
+\begin{equation}
+P(Decay In Detector|Enter Detector)=P(t\le t_0)
+\end{equation}
+So the time before the detector doesn't affect the lifetime.
+
+\section{2.4}
+(a)It is easy to say $\phi(x)$ is a Gaussian distribution.
+\begin{equation}
+\begin{aligned}
+&E[x]=E[\frac{y-\mu}{\sigma}]=\frac{E[y]-\mu}{\sigma}=0\\
+&V[x]=V[\frac{y-\mu}{\sigma}]=\frac{V[y]}{\sigma^2}=1
+\end{aligned}
+\end{equation}
+(b)
+\begin{equation}
+F(y)=\int\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-\mu)^2}{2\sigma^2}}dy
+\end{equation}
+\begin{equation}
+\Phi(x)=\int\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}{2}}dx
+\end{equation}
+We could do variable substitution $x=\frac{y=\mu}{\sigma}$, equation(7),(8) are same.
+
+\section{2.5}
+(a)
+\begin{equation}
+g(y)dy=f(x)dx
+\end{equation}
+\begin{equation}
+f(x)=g(y)\frac{dy}{dx}=\frac{1}{\sqrt{2\pi}\sigma x}e^{-\frac{(y-\mu)^2}{2\sigma^2}}=\frac{1}{\sqrt{2\pi}\sigma x}e^{-\frac{(In(x)-\mu)^2}{2\sigma^2}}
+\end{equation}
+
+(b)
+\begin{equation}
+\begin{aligned}
+E[x]&=\int\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(In(x)-\mu)^2}{2\sigma^2}}dx\\
+&=\int\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-\mu)^2}{2\sigma^2}}e^ydy\\
+&=\int\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-\mu-\sigma^2)^2}{2\sigma^2}}e^{\mu+\sigma^2/2}dy\\
+&=e^{\mu+\sigma^2/2}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+V[x]&=\int(x-E[x])^2f(x)dx\\
+&=\int x^2f(x)dx-E[x]^2\\
+&=\int\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(y-\mu-2\sigma^2)^2}{2\sigma^2}}e^{2\mu+2\sigma^2}dy-e^{2\mu+\sigma^2}\\
+&=e^{2\mu+2\sigma^2}-e^{2\mu+\sigma^2}
+\end{aligned}
+\end{equation}
+(c)
+According to error transfer formula:
+\begin{equation}
+\sigma_x^2=e^{2\mu}\sigma^2
+\end{equation}
+When $\sigma^2\ll1$ and $\sigma^2\ll\mu$, the formula is great.
+
+
+
+\section{2.6}
+\begin{equation}
+\begin{aligned}
+F_{\chi^2}(z;n)&=\int_0^z\frac{1}{2^{n/2}\Gamma(n/2)}z^{n/2-1}e^{-z/2}dz\\
+&let \quad x=z/2\\
+&=\int_0^{\frac{z}{2}}\frac{1}{\Gamma(n/2)}x^{n/2-1}e^{-x}dx\\
+&=P(\frac{z}{2},\frac{n}{2})
+\end{aligned}
+\end{equation}
+
+
+
+
+
+
+\end{CJK*}
+\end{document}

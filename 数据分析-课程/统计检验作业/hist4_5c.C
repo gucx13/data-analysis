@@ -1,0 +1,26 @@
+using namespace std;
+void hist4_5c(){
+TH1F *t = new TH1F("t","t distribution",100,0.8,1.2);
+Float_t m=3.872;
+for(int j = 0;j<10000;j++){
+	Float_t bar_m=0,s_square=0;
+	for(int i = 0;i<2608;i++)
+   		{
+		Float_t t = gRandom->Poisson(m);
+		bar_m += t;
+		s_square += t*t;
+		}
+		bar_m = bar_m/2608;
+		s_square = (s_square - 2608*bar_m*bar_m)/2607;
+		t->Fill(s_square/bar_m);
+	}
+	t->Draw();
+      
+	Int_t Prob1=0;
+      for(int i = 0;i<100000;i++)
+      {
+      if(t->GetRandom()>0.954)
+         Prob1+=1;
+	}
+      cout<<Prob1/100000.0<<endl;
+}

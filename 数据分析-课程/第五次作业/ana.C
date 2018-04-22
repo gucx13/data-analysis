@@ -1,0 +1,53 @@
+
+void ana()
+{
+TFile *f = new TFile("ex51.root");
+TTree *t1 = (TTree*)f->Get("t4");
+const Int_t kMaxTrack = 50;
+int ntrack;
+Float_t px[kMaxTrack];
+Float_t py[kMaxTrack];
+Float_t zv[kMaxTrack];
+Double_t pv[3];
+t1->SetBranchAddress("ntrack",&ntrack);
+t1->SetBranchAddress("px",px); 
+t1->SetBranchAddress("py",py);
+t1->SetBranchAddress("zv",zv); 
+t1->SetBranchAddress("pv",pv);
+
+
+
+
+TH1F *hpx = new TH1F("hpx","px distribution",100,-3,3);
+std::vector<double> c;
+Int_t nentries = (Int_t)t1->GetEntries();
+	for (Int_t i=0;i<nentries;i++) {
+		t1->GetEntry(i);
+		for(int j=0;j<ntrack;j++)
+		{
+		hpx->Fill(px[j]);
+            c.push_back(px[j]);
+		}
+		}
+	 TCanvas * c1 = new TCanvas("c", "c", 500,500);
+	hpx->Draw();
+TH1F *hpx1 = new TH1F("hpx1","px distribution",100,-3,3);
+      for (Int_t i=0;i<nentries;i++) {
+            t1->GetEntry(i);
+                  if (ntrack<20)
+			for(int j=0;j<ntrack;j++)
+            	{
+            	hpx1->Fill(px[j]);
+            
+           		}
+            }
+	 TCanvas * c2 = new TCanvas("c2", "c2", 500, 500);
+      hpx1->Draw();
+
+	std::sort(c.begin(),c.end());
+	for(std::vector<double>::iterator it = c.begin();it !=c.end();++it)
+	   std::cout<<*it<<'\n';
+}
+
+
+

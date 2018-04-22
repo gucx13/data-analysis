@@ -1,0 +1,57 @@
+using namespace std;
+  
+int GenFunc(int num,int mean)
+{
+int z = 0;
+      for(int i=0;i<num;i++)
+      {
+      z += gRandom->Poisson(mean);
+      }
+      return z;
+}
+
+void hist3_7c()
+{
+TH1F *hist_name0 = new TH1F("hist_name","3.7c",50,0,5000);
+for(int j=0;j<10000;j++)
+{
+      int photon=1,dananum=6;
+            photon = GenFunc(photon,6);
+            for(int i=1;i<dananum;i++)
+            {
+            photon = GenFunc(photon,3);
+
+            }
+      hist_name0->Fill(photon);
+}
+TH1F *hist_name1 = new TH1F("hist_name","3.7c",50,0,5000);
+for(int j=0;j<10000;j++)
+{
+      int photon=1,dananum=6;
+            
+            for(int i=0;i<dananum;i++)
+            {
+            photon = GenFunc(photon,3);
+
+            }
+      hist_name1->Fill(photon);
+}
+TH1F *hist_name = new TH1F("hist_name","3.7c",50,0,5000000);
+for(int j=0;j<10000;j++)
+{
+      int photon = 1,sum = 0;
+	photon = hist_name0->GetRandom();
+            
+            for(int i=0;i<photon;i++)
+            {
+            sum += hist_name1->GetRandom();
+
+            }
+      hist_name->Fill(sum);
+}
+hist_name->Draw();
+}
+
+
+
+

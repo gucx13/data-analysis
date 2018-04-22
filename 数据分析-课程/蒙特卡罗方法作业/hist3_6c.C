@@ -1,0 +1,21 @@
+void hist3_6c()
+{ 
+TH1F *hist_name = new TH1F("hist_name","3.6c",500,-10,10);
+const double pi = 3.1415926;
+int n = 12;
+
+for (int i=0;i<10000;i++)
+	{
+ 		double z = 0;   
+	   	for(int j=0;j<n;j++)
+			{
+      		double r = gRandom->Rndm();
+      		double x = tan(pi*(r-0.5));
+     			z += x;
+      		}
+		hist_name->Fill(z/n);
+	}
+	hist_name->Draw();
+
+}
+

@@ -1,0 +1,5 @@
+date
+pwd
+echo $SHELL
+echo $WORKDIR
+du -sh

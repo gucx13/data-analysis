@@ -1,0 +1,91 @@
+
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage{amsmath,amssymb}
+\usepackage{fancyhdr}  
+\usepackage{graphicx}
+\usepackage{float}
+
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\pagestyle{fancy}  
+\fancyhead{} % clear all fields  
+\fancyhead[R]{Data Analysis}  
+\fancyhead[L]{Chenxi Gu\\ 2017311017} 
+\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\footrulewidth}{0.4pt} 
+
+
+\title {chapter 5}
+\author{Chenxi Gu\\2017311017}
+
+\date{\today}
+
+\maketitle
+\section{5.1}
+(a)
+\begin{equation}
+\begin{aligned}
+&P((x-\mu)>a)*a^2\\
+=&a^2*\int_{|x-\mu|>a}f(x)dx\\
+<&\int_{|x-\mu|>a}(x-\mu)^2f(x)dx\\
+<&\int(x-\mu)^2f(x)dx\\
+=&\sigma^2
+\end{aligned}
+\end{equation}
+
+(b)
+\begin{equation}
+P\left(\left|\frac{\sum(x_i-\mu)}{n}\right|>a\right)<P(\left|x_i-\mu\right|>a)^n<\left(\frac{\sigma^2}{a^2}\right)^n
+\end{equation}
+
+
+
+
+\section{5.2}
+(a)
+\begin{equation}
+E[\hat{s^2}]=lim E( \frac{n}{n-1}(\bar{x^2}-\bar{x}^2))=\sigma^2
+\end{equation}
+(b)
+\begin{equation}
+E[\hat{S^2}]=E(x^2-\mu^2)=\mu^2+\sigma^2-\mu^2=\sigma^2
+\end{equation}
+
+
+
+\section{5.3}
+(a)
+\begin{equation}
+s^2=\frac{1}{n-1}\sum x_i^2-\frac{1}{n(n-1)}\sum x_ix_j
+\end{equation}
+
+\begin{equation}
+E(s^4)=\frac{1}{(n-1)^2}\sum E[x_ix_j]-\frac{2}{n(n-1)^2}\sum E[x_ix_jx_k^2]+\frac{1}{n^2(n-1)^2}\sum E[x_ix_jx_kx_l]
+\end{equation}
+
+\begin{equation}
+E(s^4)=\frac{n(n-1)\mu_2^2+n\mu_4}{(n-1)^2}-\frac{2(n\mu_4+n(n-1)(n-2)\mu_1^2\mu_2+n(n-1)\mu_2^2+2n(n-1)\mu_1\mu_3)}{n(n-1)^2}+\frac{n(n-1)(n-2)(n-3)\mu_1^4+6n(n-1)(n-2)\mu_1^2\mu_2+3n(n-1)\mu_2^2+4n(n-1)\mu_1\mu_3+n\mu_4}{n^2(n-1)^2}
+\end{equation}
+
+final we get :
+\begin{equation}
+V[s^2]=\frac{1}{n}\left(\mu_4-\frac{n-3}{n-1}\mu_2^2\right)
+\end{equation}
+
+(b)
+\begin{equation}
+V[s^2]=\frac{2}{n-1}\sigma^4
+\end{equation}
+
+
+
+
+
+
+
+\end{CJK*}
+\end{document}

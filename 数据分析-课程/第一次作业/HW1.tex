@@ -1,0 +1,16 @@
+mkdir workarea
+export WORKDIR = ./Users/guchenxi/Downloads
+#!/bin/bash
+num=1 
+DIR="testDir"
+while (( $num < 4 ))
+do
+	if [ -d $DIR$num ]; 
+	then 
+	echo "$DIR$num exist!!"
+else
+mkdir $DIR$num 
+fi
+let num+=1 
+done
+

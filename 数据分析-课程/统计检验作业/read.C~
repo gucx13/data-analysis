@@ -1,0 +1,84 @@
+
+#include<iostream>  
+#include<string>  
+#include<fstream>  
+#include<algorithm>  
+using namespace std;  
+  
+//定义访问类  
+class Data  
+{  
+public:  
+    double min;        //最小  
+    double max;        //最大  
+    int number;        //次数  
+};  
+int read()  
+{  
+    //打开和创立文件：  
+
+    ifstream infile;  
+    infile.open("data_1.txt", ios::in);  
+    /*string contents;*/  
+    if (infile.fail())  
+    {  
+        cout << "error open!" << endl;  
+    }  
+
+    //读入文件：  
+    Data data[20];  
+    int data_size = 0;  
+    while (!infile.eof())  
+    {  
+        infile >> data[data_size].min >> data[data_size].max >> data[data_size].number;
+        data_size++;  
+    }
+    ifstream infile1; 
+    infile1.open("theory_1.txt", ios::in);
+    /*string contents;*/
+    if (infile1.fail())
+    {
+        cout << "error open!" << endl;
+    }
+
+    Data data_theory_1[20];
+    int data_theory_1_size = 0;
+    while (!infile1.eof())
+    {
+        infile1 >> data_theory_1[data_theory_1_size].min >> data_theory_1[data_theory_1_size].max >> data_theory_1[data_theory_1_size].number;
+        data_theory_1_size++;
+    }
+
+    ifstream infile2;
+    infile2.open("theory_2.txt", ios::in);
+    /*string contents;*/
+    if (infile2.fail())
+    {
+        cout << "error open!" << endl;
+    }
+
+    Data data_theory_2[20];
+    int data_theory_2_size = 0;
+    while (!infile2.eof())
+    {
+        infile2 >> data_theory_2[data_theory_2_size].min >> data_theory_2[data_theory_2_size].max >> data_theory_2[data_theory_2_size].number;
+        data_theory_2_size++;
+    }
+
+
+ TH1F *hist_name = new TH1F("hist_name","4.4",20,0,10); 
+ 	for (int i=0;i<20;i++)
+	{
+		for(int j=0;j<data[i].number;j++)
+		{
+		hist_name->Fill(0.5*i);
+		}
+	}
+ hist_name->Draw();
+
+ for(int k=0;k<20;k++)
+ {
+ cout<<data[k].number<<"    "<<data_theory_1[k].number<<"    "<<data_theory_2[k].number<<endl;
+ }
+  return 0;  
+}  

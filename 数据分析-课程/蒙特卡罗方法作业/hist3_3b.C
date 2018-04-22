@@ -1,0 +1,16 @@
+void hist3_3b()
+{ 
+TH1F *hist_name = new TH1F("hist_name","3.3b",100,0,2);
+
+for (int i=0;i<10000;i++)
+      {
+      double x = gRandom->Uniform(0,1);
+      double u = gRandom->Uniform(0,2);
+      	if(u<2*x)
+		{	
+			hist_name->Fill( x );
+		}
+      }
+hist_name->Draw();
+}
+
