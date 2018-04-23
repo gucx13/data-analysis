@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>安装Geant4和ROOT（Ubuntu16.04）</title>
+
+</head>
+<body>
+<h1>安装Geant4和ROOT（Ubuntu16.04）</h1>
+
+<hr />
+
+<p>这里介绍如何在Ubuntu16.04上安装Geant4和ROOT。</p>
+
+<p><strong>重要提醒</strong></p>
+
+<ul>
+<li>使用默认的<strong>bash</strong></li>
+<li>用户名为<strong>geant4</strong></li>
+<li><p>以Geant4 10.00.p02和ROOT v5.34.19为例，假设<strong>Geant4</strong>和<strong>ROOT</strong>安装至</p>
+
+<pre><code>  /projects/soft/ext
+</code></pre></li>
+<li><p>需要预安装的软件多数直接用<code>apt-get install</code>或<code>synaptic</code>安装，但<strong>Pythia6</strong>安装至</p>
+
+<pre><code>  /projects/soft/ext/pythia6
+</code></pre></li>
+</ul>
+
+
+<hr />
+
+<p><link rel="stylesheet" href="http://yandex.st/highlightjs/6.2/styles/googlecode.min.css"></p>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+
+<script src="http://yandex.st/highlightjs/6.2/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+$("h2,h3,h4,h5,h6").each(function(i,item){
+var tag = $(item).get(0).localName;
+$(item).attr("id","wow"+i);
+$("#category").append('<a class="new'+tag+'" href="#wow'+i+'">'+$(this).text()+'</a></br>');
+$(".newh2").css("margin-left",0);
+$(".newh3").css("margin-left",20);
+$(".newh4").css("margin-left",40);
+$(".newh5").css("margin-left",60);
+$(".newh6").css("margin-left",80);
+});
+});
+</script>
+
+
+<div id="category"></div>
+
+
+<hr />
+
+<h3>预备软件的安装</h3>
+
+<p>Ubuntu安装后，建议先安装<code>synaptic</code>：</p>
+
+<pre><code>sudo apt-get update
+sudo apt-get install synaptic
+</code></pre>
+
+<p>然后打开<code>synaptic</code>，在<code>Settings</code>-><code>Repositories</code>-><code>Download from:</code>中选择<code>Other...</code>，从中选择合适的源。教育网一般可以选择科大的镜像站点<code>http://mirrors.ustc.edu.cn/ubuntu</code>。</p>
+
+<p>更换软件源后不要忘记<code>Reload</code>。</p>
+
+<p>对于新手来说，利用<code>synaptic</code>查找并安装软件更为简单。</p>
+
+<h4>安装<strong>ROOT</strong>的必要或可选软件</h4>
+
+<p>参见ROOT网站：<a href="http://root.cern.ch/drupal/content/build-prerequisites">ROOT prerequisites</a>。</p>
+
+<p>推荐安装以下软件，其他需要的软件包会根据依赖关系自动安装：</p>
+
+<ul>
+<li>cmake</li>
+<li>git</li>
+<li>dpkg-dev</li>
+<li>libdpkg-dev</li>
+<li>libx11-dev</li>
+<li>libxpm-dev</li>
+<li>libxft-dev</li>
+<li>libxext-dev</li>
+<li>libjpeg-dev</li>
+<li>python-dev</li>
+<li>gfortran</li>
+<li>libssl-dev</li>
+<li>libpcre3-dev</li>
+<li>libglu1-mesa-dev</li>
+<li>libglew-dev</li>
+<li>libftgl-dev</li>
+<li>libmysqlclient-dev</li>
+<li>libfftw3-dev</li>
+<li>libcfitsio3-dev</li>
+<li>libgraphviz-dev</li>
+<li>libavahi-compat-libdnssd-dev</li>
+<li>libdap-dev</li>
+<li>libxml2-dev</li>
+<li>libgsl0-dev</li>
+<li>libqt4-dev</li>
+<li>libpnglite-dev</li>
+<li>libafterimage-dev</li>
+<li>libgmp-dev</li>
+<li>libpq-dev</li>
+<li>libsqlite3-dev</li>
+<li>libiodbc2-dev</li>
+<li>libdpm-dev</li>
+<li>libavahi-core-dev</li>
+</ul>
+
+
+<h4>安装Geant4的必要和可选软件</h4>
+
+<p>在安装了<strong>ROOT</strong>需要的软件包的基础上，建议安装以下软件包：</p>
+
+<ul>
+<li>libxerces-c-dev</li>
+<li>libmotif-dev</li>
+<li>libglw1-mesa-dev</li>
+<li>inventor-dev</li>
+<li>opticalraytracer</li>
+<li>libpythia8-dev</li>
+<li>pythia8-doc-html</li>
+<li>pythia8-doc-worksheet</li>
+<li>pythia8-examples</li>
+</ul>
+
+
+<h4>建议安装的其他软件</h4>
+
+<ul>
+<li>vim</li>
+<li>vim-doc</li>
+<li>vim-scripts</li>
+<li>emacs</li>
+<li>colordiff</li>
+<li>lftp</li>
+<li>dkms</li>
+<li>build-essential</li>
+<li>libzlcore-dev</li>
+<li>libxmu-dev</li>
+</ul>
+
+
+<h3>安装ROOT</h3>
+
+<h4>准备源文件</h4>
+
+<pre><code> sudo mkdir -p /projects/soft/ext/sources
+ cd /projects/soft
+ sudo chown -R geant4:geant4 ext
+ （注意，两个geant4分别表示用户名和组名，如果你用了别的用户名，需要进行相应的替换。你可以在命令行执行`echo $USER`和`echo $GROUP`得到当前的用户名和组名。）
+ mkdir -p ext/root/pro
+ cd ext/sources
+ wget ftp://root.cern.ch/root/root_v5.34.19.source.tar.gz
+ tar -zxvf root_v5.34.19.source.tar.gz
+</code></pre>
+
+<h4>环境变量设置</h4>
+
+<p>编辑文件<code>$HOME/ROOT.sh</code>，内容为</p>
+
+<pre><code> #!/bin/bash
+ #
+
+ export ROOTSYS=/projects/soft/ext/root/pro
+ if ! echo ${PATH} | grep -q $ROOTSYS/bin ; then
+    export PATH=$ROOTSYS/bin:$PATH
+ fi
+
+ if [ -n "$LD_LIBRARY_PATH" ]; then
+    if ! echo ${LD_LIBRARY_PATH} | grep -q $ROOTSYS/lib ; then
+       export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH
+    fi
+ else
+    export LD_LIBRARY_PATH=$ROOTSYS/lib
+ fi
+</code></pre>
+
+<p>通过<code>source $HOME/ROOT.sh</code>设置环境变量<code>ROOTSYS</code>，并更新<code>PATH</code>和<code>LD_LIBRARY_PATH</code>。</p>
+
+<h4>准备安装脚本</h4>
+
+<p>编辑脚本<code>/projects/soft/ext/sources/install_root.sh</code>，包含如下内容：</p>
+
+<pre><code> #!/bin/bash
+
+cd /projects/soft/ext/sources/root
+source $HOME/ROOT.sh
+
+./configure --fail-on-missing \
+   --enable-builtin-pcre \
+   --enable-builtin-freetype \
+   --enable-cintex \
+   --enable-explicitlink \
+   --enable-gdml \
+   --enable-genvector \
+   --enable-mathmore \
+   --enable-minuit2 \
+   --enable-mysql \
+   --enable-python \
+   --enable-qt \
+   --enable-qtgsi \
+   --enable-reflex \
+   --enable-roofit \
+   --enable-table \
+   --enable-unuran \
+   --with-pythia8-incdir=/usr/include/Pythia8 \
+   &gt;&amp; log.configure
+
+ make -j2 &gt;&amp; log.make
+ make install &gt;&amp; log.install
+</code></pre>
+
+<h4>编译安装</h4>
+
+<pre><code>cd /projects/soft/ext/sources
+source install_root.sh
+</code></pre>
+
+<h3>安装Geant4.10.00.p02</h3>
+
+<h4>准备源文件</h4>
+
+<pre><code> cd /projects/soft/ext/sources
+ &lt;download geant4.10.00.p02.tar.gz&gt;
+ tar -zxvf geant4.10.00.p02.tar.gz
+ cd /projects/soft/ext
+ mkdir G4data
+ cd G4data
+ &lt;download data files&gt;
+</code></pre>
+
+<p>这些数据文件包括：</p>
+
+<ul>
+<li>G4ABLA.3.0.tar.gz</li>
+<li>G4NEUTRONXS.1.4.tar.gz</li>
+<li>G4SAIDDATA.1.1.tar.gz</li>
+<li>G4EMLOW.6.35.tar.gz</li>
+<li>G4PhotonEvaporation.3.0.tar.gz</li>
+<li>RealSurface.1.0.tar.gz</li>
+<li>G4ENSDFSTATE.1.0.tar.gz</li>
+<li>G4PII.1.3.tar.gz</li>
+<li>G4NDL.4.4.tar.gz</li>
+<li>G4RadioactiveDecay.4.0.tar.gz</li>
+</ul>
+
+
+<p>解压缩这些文件：</p>
+
+<pre><code> for i in `ls *.gz` ; do tar -zxvf $i ; done
+</code></pre>
+
+<h4>编译安装</h4>
+
+<pre><code>    cd /projects/soft/ext/sources
+    mkdir build-geant4.10.00.p02
+    cd build-geant4.10.00.p02
+    cmake -D CMAKE_INSTALL_PREFIX=/projects/soft/ext/geant4.10.00.p02-install -DGEANT4_INSTALL_DATADIR=/projects/soft/ext/G4data -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_USE_GDML=ON -DGEANT4_USE_QT=ON -DGEANT4_USE_XM=ON -DGEANT4_USE_OPENGL_X11=ON -DGEANT4_USE_INVENTOR=OFF -DGEANT4_USE_RAYTRACER_X11=ON -DGEANT4_USE_SYSTEM_ZLIB=ON ../geant4.10.00.p02    
+    make -j2
+    make install
+</code></pre>
+
+<p>这里，我们通过<code>cmake</code>指定：</p>
+
+<ul>
+<li>Geant4安装目录为<code>/projects/soft/ext/geant4.10.00.p02-install</code></li>
+<li>数据文件目录为<code>/projects/soft/ext/G4data</code></li>
+<li>启用多线程模式</li>
+<li>启用<strong>GDML</strong>，<strong>QT</strong>，<strong>XM</strong>，<strong>OPENGL_X11</strong>，<strong>RAYTRACER_X11</strong>，<strong>ZLIB</strong></li>
+<li>禁用<strong>INVENTOR</strong></li>
+</ul>
+
+
+<h4>环境设置</h4>
+
+<pre><code>source /projects/soft/ext/geant4.10.00.p02-install/bin/geant4.sh
+</code></pre>
+
+<h4>编译例子</h4>
+
+<pre><code>    mkdir -p $HOME/workdir/geant4
+    cd $HOME/workdir/geant4
+    cp -r /projects/soft/ext/geant4.10.00.p02-install/share/Geant4-10.0.2/examples .
+
+    mkdir build-B1
+    cd build-B1
+    cmake ../examples/basic/B1
+    make
+    ./exampleB1
+</code></pre>
+</body>
+</html>
