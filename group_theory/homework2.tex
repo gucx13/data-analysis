@@ -140,17 +140,126 @@ R(a)=
 \section{2.8}
 
 
+\section{2}
+In the active view:
+\begin{equation}
+SO(2)=
+\begin{pmatrix}
+     cos(\theta)  &  -sin(\theta)  &  0  \\
+      sin(\theta)  &  cos(\theta)  &  0  \\
+                    0  &                 0  &  1  \\
+\end{pmatrix}
+\end{equation}
+In the passive view:
+\begin{equation}
+SO(2)=
+\begin{pmatrix}
+     cos(\theta)  &   sin(\theta)  &  0  \\
+     -sin(\theta)  &  cos(\theta)  &  0  \\
+                    0  &                 0  &  1  \\
+\end{pmatrix}
+\end{equation}
 
 
+\section{3}
+We can get the $D_{2n}=\{e,a,a^2...,a^{n-1},b,ba,ba^2.....,ba^{n-1}\}$\\
+Secondly, we can find the class in the group:\\
+(a)$n=2k$
+\begin{equation}
+\begin{aligned}
+\{e\}&\\
+\{a,a^{n-1}\}&\\
+\{a^2,a^{n-2}\}&\\
+....\\
+\{a_k\}&\\
+\{b,b^2....,b^{2k}\}&\\
+\{ba,ba^{3}...b^{2k-1}\}&\\
+\end{aligned}
+\end{equation}
+So we can deduce there are 4 1-dimention representation.
+\begin{equation}
+\begin{pmatrix}
+     a=1 \\
+     b=1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=1 \\
+     b=-1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=-1 \\
+     b=1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=-1 \\
+     b=-1 \\
+\end{pmatrix}
+\end{equation}
+And $\frac{n}{2}-1$ 2-dimentions representation, the $i_{th}$ 2-dimentions representation is:
+\begin{equation}
+A_i^{(2)}=\left\{
+e=
+\begin{pmatrix}
+     1  &  0 \\
+     0  &  1 \\
+\end{pmatrix}\quad
+a=
+\begin{pmatrix}
+     cos(\frac{2\pi i}{n}) & -sin(\frac{2\pi i}{n}) \\
+     sin(\frac{2\pi i}{n}) &  cos(\frac{2\pi i}{n}) \\
+\end{pmatrix}\quad
+b=
+\begin{pmatrix}
+     1  &  0 \\
+     0  & -1 \\
+\end{pmatrix}
+\right\}
+\end{equation}
+(b)$n=2k+1$
 
+\begin{equation}
+\begin{aligned}
+\{e\}&\\
+\{a,a^{n-1}\}&\\
+\{a^2,a^{n-2}\}&\\
+....\\
+\{a_k,a_{k+1}\}&\\
+\{b,b^2....,b^{n}\}&\\
+\end{aligned}
+\end{equation}
 
+So we can deduce there are 2 1-dimention representation.
+\begin{equation}
+\begin{pmatrix}
+     a=1 \\
+     b=1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=1 \\
+     b=-1 \\
+\end{pmatrix}\quad
+\end{equation}
 
-
-
-
-
-
-
+And $\frac{n-1}{2}$ 2-dimentions representation, the $i_{th}$ 2-dimentions representation is:
+\begin{equation}
+A_i^{(2)}=\left\{
+e=
+\begin{pmatrix}
+     1  &  0 \\
+     0  &  1 \\
+\end{pmatrix}\quad
+a=
+\begin{pmatrix}
+     cos(\frac{2\pi i}{n}) & -sin(\frac{2\pi i}{n}) \\
+     sin(\frac{2\pi i}{n}) &  cos(\frac{2\pi i}{n}) \\
+\end{pmatrix}\quad
+b=
+\begin{pmatrix}
+     1  &  0 \\
+     0  & -1 \\
+\end{pmatrix}
+\right\}
+\end{equation}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.4.22)  25 APR 2018 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.4.22)  25 APR 2018 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -218,14 +218,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
 [1
 
-] [2] (./homework2.aux) ) 
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.54448pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] [3] (./homework2.aux) ) 
 Here is how much of TeX's memory you used:
  2294 strings out of 494498
  24187 string characters out of 6172426
- 83764 words of memory out of 5000000
+ 85938 words of memory out of 5000000
  5724 multiletter control sequences out of 15000+600000
  10888 words of font info for 43 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 27i,7n,43p,226b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,43p,226b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework2.dvi (2 pages, 4860 bytes).
+Output written on homework2.dvi (3 pages, 8004 bytes).
