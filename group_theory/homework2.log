@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.16)  25 APR 2018 19:06
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.16)  26 APR 2018 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -224,13 +224,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 [1
 
 ]
+Overfull \hbox (4.02728pt too wide) in paragraph at lines 141--143
+\TU/lmr/m/n/10 In the representation $\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 g[]\OT1/cmr/m/n/10 )$\TU/lmr/m/n/10 , the character is $\OML/cmm/m
+/it/10 ^^_[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 )$\TU/lmr/m/n/
+10 .In the representation $\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 g[]\OT1/cmr/m/n/10 )$\TU/lmr/m/n/10 ,
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.65004pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] [3] (./homework2.aux) ) 
+[2] [3]
+Overfull \hbox (32.91351pt too wide) detected at line 316
+\OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 = []
+ []
+
+
+Overfull \hbox (45.35934pt too wide) detected at line 346
+\OML/cmm/m/it/10 G[] \OT1/cmr/m/n/10 = []
+ []
+
+[4] (./homework2.aux) ) 
 Here is how much of TeX's memory you used:
  2295 strings out of 493068
  24943 string characters out of 6135636
@@ -238,6 +256,6 @@ Here is how much of TeX's memory you used:
  6221 multiletter control sequences out of 15000+600000
  10024 words of font info for 45 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 27i,11n,43p,226b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,43p,226b,469s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework2.pdf (3 pages).
+Output written on homework2.pdf (4 pages).

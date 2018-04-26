@@ -138,7 +138,16 @@ R(a)=
 
 
 \section{2.8}
-
+In the representation $A^p(g_a)$, the character is $\chi^p(g_a)$.In the representation $A^r(g_a)$, the character is $\chi^r(g_a)$.\\
+Since $A^p(g_a)$ and  $A^r(g_a)$ are Irreducible unequivalent representation.
+\begin{equation}
+\sum_a\chi^p(g_a)\chi^{r*}(g_a)=0
+\end{equation}
+this equation also mean the identical representation and $A^p(g_a)\otimes A^{r*}(g_a)$ are orthogonal.
+\begin{equation}
+\sum_a\chi^p(g_a)\chi^{p*}(g_a)=1
+\end{equation}
+For the same reason, $A^p(g_a)\otimes A^{p*}(g_a)$ only have 1 identical representation.
 
 \section{2}
 In the active view:
@@ -176,7 +185,45 @@ Secondly, we can find the class in the group:\\
 \{ba,ba^{3}...b^{2k-1}\}&\\
 \end{aligned}
 \end{equation}
-
+So we can deduce there are 4 1-dimention representation.
+\begin{equation}
+\begin{pmatrix}
+     a=1 \\
+     b=1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=1 \\
+     b=-1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=-1 \\
+     b=1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=-1 \\
+     b=-1 \\
+\end{pmatrix}
+\end{equation}
+And $\frac{n}{2}-1$ 2-dimentions representation, the $i_{th}$ 2-dimentions representation is:
+\begin{equation}
+A_i^{(2)}=\left\{
+e=
+\begin{pmatrix}
+     1  &  0 \\
+     0  &  1 \\
+\end{pmatrix}\quad
+a=
+\begin{pmatrix}
+     cos(\frac{2\pi i}{n}) & -sin(\frac{2\pi i}{n}) \\
+     sin(\frac{2\pi i}{n}) &  cos(\frac{2\pi i}{n}) \\
+\end{pmatrix}\quad
+b=
+\begin{pmatrix}
+     1  &  0 \\
+     0  & -1 \\
+\end{pmatrix}
+\right\}
+\end{equation}
 (b)$n=2k+1$
 
 \begin{equation}
@@ -190,18 +237,113 @@ Secondly, we can find the class in the group:\\
 \end{aligned}
 \end{equation}
 
+So we can deduce there are 2 1-dimention representation.
+\begin{equation}
+\begin{pmatrix}
+     a=1 \\
+     b=1 \\
+\end{pmatrix}\quad
+\begin{pmatrix}
+     a=1 \\
+     b=-1 \\
+\end{pmatrix}\quad
+\end{equation}
+
+And $\frac{n-1}{2}$ 2-dimentions representation, the $i_{th}$ 2-dimentions representation is:
+\begin{equation}
+A_i^{(2)}=\left\{
+e=
+\begin{pmatrix}
+     1  &  0 \\
+     0  &  1 \\
+\end{pmatrix}\quad
+a=
+\begin{pmatrix}
+     cos(\frac{2\pi i}{n}) & -sin(\frac{2\pi i}{n}) \\
+     sin(\frac{2\pi i}{n}) &  cos(\frac{2\pi i}{n}) \\
+\end{pmatrix}\quad
+b=
+\begin{pmatrix}
+     1  &  0 \\
+     0  & -1 \\
+\end{pmatrix}
+\right\}
+\end{equation}
 
 
+\section{4}
+We know the pauli group:
+\begin{equation}
+\begin{aligned}
+&[\sigma_i,\sigma_j]=2i\epsilon_{ijk}\sigma_k\\
+&\sigma_i^2=1
+\end{aligned}
+\end{equation}
+So we can get the group element:
+\begin{equation}
+G=\{\pm 1,\pm i,\pm \sigma_x,\pm i\sigma_x,\pm \sigma_y,\pm i\sigma_y,\pm \sigma_z,\pm i\sigma_z\}
+\end{equation}
+It is easy to find there are 10 classes.8 1-dimention representation and 2 2-dimentions representation.\\
+2-dimentions representation:
+\begin{equation}
+G_1^{(2)}=\left\{
+1=
+\begin{pmatrix}
+     1  &  0 \\
+     0  &  1 \\
+\end{pmatrix}\quad
+i=
+\begin{pmatrix}
+      i  &  0 \\
+     0  &   i \\
+\end{pmatrix}\quad
+\sigma_x=
+\begin{pmatrix}
+     0  &  1 \\
+     1  &  0 \\
+\end{pmatrix}\quad
+\sigma_y=
+\begin{pmatrix}
+     0  &  -i \\
+     i   &  0 \\
+\end{pmatrix}
+\sigma_z=
+\begin{pmatrix}
+     1  &  0 \\
+     0  & -1 \\
+\end{pmatrix}
+\right\}
+\end{equation}
 
-
-
-
-
-
-
-
-
-
+\begin{equation}
+G_2^{(2)}=\left\{
+1=
+\begin{pmatrix}
+     1  &  0 \\
+     0  &  1 \\
+\end{pmatrix}\quad
+i=
+\begin{pmatrix}
+     -i  &  0 \\
+     0  &  -i \\
+\end{pmatrix}\quad
+\sigma_x=
+\begin{pmatrix}
+     0  &  -i \\
+     i   &  0 \\
+\end{pmatrix}\quad
+\sigma_y=
+\begin{pmatrix}
+     0  &  1 \\
+     1  &  0 \\
+\end{pmatrix}
+\sigma_z=
+\begin{pmatrix}
+     1  &  0 \\
+     0  & -1 \\
+\end{pmatrix}
+\right\}
+\end{equation}
 
 
 
