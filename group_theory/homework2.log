@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2018.4.22)  26 APR 2018 16:35
+=======
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.16)  26 APR 2018 21:27
+>>>>>>> 3d26bf7d427a5ccbbdac525345f24e1ea242f2e5
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
