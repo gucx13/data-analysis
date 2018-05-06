@@ -1,0 +1,117 @@
+
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage{amsmath,amssymb}
+\usepackage{fancyhdr}  
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\pagestyle{fancy}  
+\fancyhead{} % clear all fields  
+\fancyhead[R]{Data Analysis}  
+\fancyhead[L]{Chenxi Gu\\ 2017311017} 
+\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\footrulewidth}{0.4pt} 
+
+
+
+\title {chapter 6}
+\author{Chenxi Gu\\2017311017}
+
+\date{\today}
+
+\maketitle
+
+\section{6.1}
+(a)
+We can get the likelihood function: 
+\begin{equation}
+logL(\mu,\sigma^2)=\sum_{i=1}^n(log\frac{1}{\sqrt{2\pi}}+\frac{1}{2}log\frac{1}{\sigma^2}+\frac{(x_i-\mu)^2}{2\sigma^2})
+\end{equation}
+So we can get the maximum likelihood variation.
+\begin{equation}
+\begin{aligned}
+&\hat{\mu}=\frac{1}{n}\sum_{i=1}^nx_i\\
+&\hat{\sigma^2}=\frac{1}{n}\sum_{i=1}^n(x_i-\hat{\mu})^2\\
+\end{aligned}
+\end{equation}
+(b)
+\begin{equation}
+\begin{aligned}
+E[\hat{\mu}]&=\frac{1}{n}\sum_{i=1}^n(\int\frac{x_i}{\sqrt{2\pi}\sigma}e^{-\frac{(x_i-\mu)}{2\sigma^2}}dx_i\times_{j<>i}\int\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x_j-\mu)}{2\sigma^2}}dx_j )\\
+&=\mu
+\end{aligned}
+\end{equation}
+\begin{equation}
+E[\hat{\sigma^2}]=\frac{n-1}{n}\sigma^2
+\end{equation}
+\begin{equation}
+\begin{aligned}
+V[\hat{\mu}]&=E[\hat{\mu}^2]-E[\hat{\mu}]^2\\
+&=\frac{\sigma^2}{n}
+\end{aligned}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+V[\hat{\sigma^2}]&=E[\hat{\sigma^2}^2]-E[\hat{\sigma^2}]^2\\
+&=\frac{(n-1)^2}{n^3}(3\sigma^4-\frac{n-3}{n-1}\sigma^3)
+\end{aligned}
+\end{equation}
+(c)
+\begin{equation}
+V^{-1}=
+  \begin{matrix}
+   $$-\frac{n}{\sigma^2}$$ & $$-\frac{1}{\sigma^4}\sum_{i=1}^{n}(x_i-\mu)$$ \\
+   $$-\frac{1}{\sigma^4}\sum_{i=1}^{n}(x_i-\mu)$$ & $$-\sum_{i=1}^{n}[\frac{(x_i-\mu)^2}{\sigma^6}-\frac{1}{2\sigma^4}]$$
+  \end{matrix} 
+  \end{equation}
+  when the $n->\infty$, the answer is same.
+  
+  
+\section{6.2}
+The likelihood function:
+\begin{equation}
+L=C_N^np^n(1-p)^{N-n}
+\end{equation}
+
+\begin{equation}
+\hat{p}=\frac{n}{N}
+\end{equation}
+
+\begin{equation}
+E(\hat{p})=\frac{E(n)}{N}=p
+\end{equation}
+
+\begin{equation}
+V(\hat{p})=\frac{p(1-p)}{N}
+\end{equation}
+According to the 6.16:
+\begin{equation}
+V(\hat{p})>\frac{1}{E[-\frac{\partial^2logL}{\partial p^2}]}=\frac{N}{p(1-p)}
+\end{equation}
+
+\section{6.3}
+(a)
+\begin{equation}
+\hat{\alpha}=\frac{2n}{N}-1
+\end{equation}
+\begin{equation}
+\sigma_{\hat{\alpha}}=\sqrt{\frac{1-\alpha^2}{N}}
+\end{equation}
+ (b)
+ $N>9*10^6$
+ 
+ \section{6.4}
+ \begin{equation}
+ \hat{\nu}
+ \end{equation}
+ 
+ 
+ 
+ 
+\end{CJK*}
+\end{document}
