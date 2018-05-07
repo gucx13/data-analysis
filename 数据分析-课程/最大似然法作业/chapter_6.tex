@@ -107,8 +107,126 @@ V(\hat{p})>\frac{1}{E[-\frac{\partial^2logL}{\partial p^2}]}=\frac{N}{p(1-p)}
  
  \section{6.4}
  \begin{equation}
- \hat{\nu}
+ L=\frac{\nu^n}{n!}e^{-\nu}
  \end{equation}
+ So we can get $\hat{\nu}=n$
+ 
+ \begin{equation}
+ E(\hat{\nu})=E(n)=\nu
+ \end{equation}
+  \begin{equation}
+ V(\hat{\nu})=V(n)=\nu
+ \end{equation}
+ According to the 6.16:
+ \begin{equation}
+ V[\hat{\nu}]>\frac{1}{E[-\frac{\partial^2logL}{\partial\nu^2}]}=\frac{1}{E[\frac{n}{\nu^2}]}=\nu
+ \end{equation}
+ 
+ 
+ \section{6.5}
+ \begin{equation}
+ \hat{\alpha}=\frac{n_R-n_L}{n_R+n_L}
+ \end{equation}
+ Error transfer formula:
+ \begin{equation}
+\begin{aligned}
+\sigma^2_{\hat{\alpha}}&=(\frac{\partial\alpha}{\partial n_R})^2\sigma^2_{n_R}+(\frac{\partial\alpha}{\partial n_L})^2\sigma^2_{n_L}\\
+&=\sqrt{\frac{1-\alpha^2}{\nu_{tot}}}
+\end{aligned}
+ \end{equation}
+ 
+\section{6.6}
+ (a)
+ \begin{equation}
+ V[\alpha u+v]=\alpha^2 V[u]+V[v]+2\alpha Cov(u,v)>0
+ \end{equation}
+We can let $\alpha^2=\frac{V[v]}{V[u]}$ :
+\begin{equation}
+V[v]V[u]>(Cov[u,v])^2
+\end{equation}
+ (b)
+ Using Cauchy-Schwarz :
+ \begin{equation}
+ V[\hat{\theta}]V[\frac{\partial}{\partial \theta }logL]>(Cov[\hat{\theta},\frac{\partial}{\partial \theta }logL])^2
+ \end{equation}
+ (c)
+ Prove:
+ \begin{equation}
+ 
+ \end{equation}
+ 
+ \begin{equation}
+ \begin{aligned}
+ V[\hat{\theta}]&>\frac{(Cov[\hat{\theta},\frac{\partial}{\partial \theta }logL])^2}{V[\frac{\partial}{\partial \theta }logL]}\\
+ &=\frac{(E[\hat{\theta}\frac{\partial}{\partial \theta }logL])^2}{E[(\frac{\partial}{\partial \theta }logL)^2]}\\
+ \end{aligned}
+ \end{equation}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ \section{6.8}
+ (a)
+ The maximum likelihood function is : 
+ \begin{equation}
+ L=\frac{1}{N^N}
+ \end{equation}
+ When $N=1$, the L is maximum.It is wrong.
+ (b)
+ We can take the $n_{max}$ as the $\hat{N}_{taxi}$.
+ \begin{equation}
+ \begin{aligned}
+ E[\hat{N}_{taxi}]&=\sum_{i=N}^{N_{taxi}}\frac{iC_{i-1}^{N-1}}{C_{N_{taxi}}^N}\\
+ &=\sum_{i=N}^{N_{taxi}}N\frac{C_{i}^{N}}{C_{N_{taxi}}^N}\\
+ &=\frac{N(N_{taxi}+1)}{N+1}
+ \end{aligned}
+ \end{equation}
+ 
+ \begin{equation}
+ \begin{aligned}
+E[\hat{N}_{taxi}^2]&=\sum_{i=N}^{N_{taxi}}\frac{i^2C_{i-1}^{N-1}}{C_{N_{taxi}}^N}\\
+&=\sum_{i=N}^{N_{taxi}}N\frac{(i+1)C_{i}^{N}-C_{i}^{N}}{C_{N_{taxi}}^N}\\
+&=\sum_{i=N}^{N_{taxi}}N\frac{(N+1)C_{i+1}^{N+1}-C_{i}^{N}}{C_{N_{taxi}}^N}\\
+&=N(N+1)\frac{C^{N+2}_{N_{taxi}+2}}{C_{N_{taxi}}^N}-N\frac{C^{N+1}_{N_{taxi}+1}}{C_{N_{taxi}}^N}
+ \end{aligned}
+ \end{equation}
+ 
+ So we can get the variant:
+ \begin{equation}
+ V[\hat{N}_{taxi}]=\frac{(N_{taxi}+1)(N_{taxi}-N)N}{(N+2)(N+1)^2}
+ \end{equation}
+ 
+ 
+ 
+ \section{6.9}
+ 
+ The maximum likelihood function is :
+ \begin{equation}
+ L=\prod_{i=1}^N\frac{(\theta a(x_i))^{n_i}}{n!}e^{-\theta a(x_i)}
+ \end{equation}
+ We use $\frac{\partial logL}{\partial \theta}=0$
+ \begin{equation}
+ \hat{\theta}=\frac{\sum_{i=1}^Nn_i}{\sum_{i=1}^Na(x_i)}
+ \end{equation}
+ 
+  \begin{equation}
+ E[\hat{\theta}]=\frac{\sum_{i=1}^N\theta a(x_i)}{\sum_{i=1}^Na(x_i)}=\theta
+ \end{equation}
+
+  \begin{equation}
+ V[\hat{\theta}]=\frac{\sum_{i=1}^NV[n_i]}{(\sum_{i=1}^Na(x_i))^2}=\frac{\theta}{\sum_{i=1}^Na(x_i)}
+ \end{equation}
+ 
+ and the minimum border of variant is :
+ \begin{equation}
+ V[\hat{\theta}]>\frac{1}{E[-\frac{\partial^2logL}{\partial\theta^2}]}=\frac{1}{\sum_{i=1}^NE[\frac{n_i}{\theta^2}]}=\frac{\theta}{\sum_{i=1}^Na(x_i)}
+ \end{equation}
+ 
+ 
+ 
  
  
  
