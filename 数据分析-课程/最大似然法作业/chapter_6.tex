@@ -6,6 +6,7 @@
 \usepackage{fancyhdr}  
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{subfig}
 
 \begin{document}
 \begin{CJK*}{GBK}{song}
@@ -152,21 +153,70 @@ V[v]V[u]>(Cov[u,v])^2
  (c)
  Prove:
  \begin{equation}
- 
+ \begin{aligned}
+ E[\frac{\partial}{\partial\theta}logL]&=\int...\int f_{joint}(x;\theta)\frac{\partial}{\partial \theta}log f_{joint}(x;\theta)dx_1...dx_n\\
+ &=\int...\int \frac{\partial}{\partial \theta} f_{joint}(x;\theta)dx_1...dx_n\\
+ &=\frac{\partial}{\partial\theta}1\\
+ &=0
+ \end{aligned}
  \end{equation}
- 
+ And then
  \begin{equation}
  \begin{aligned}
  V[\hat{\theta}]&>\frac{(Cov[\hat{\theta},\frac{\partial}{\partial \theta }logL])^2}{V[\frac{\partial}{\partial \theta }logL]}\\
  &=\frac{(E[\hat{\theta}\frac{\partial}{\partial \theta }logL])^2}{E[(\frac{\partial}{\partial \theta }logL)^2]}\\
  \end{aligned}
  \end{equation}
- 
- 
- 
- 
- 
- 
+ (d)
+ Prove a:
+  \begin{equation}
+ \begin{aligned}
+ E[\hat{\theta}\frac{\partial}{\partial\theta}logL]&=\int...\int f_{joint}(x;\theta)\hat{\theta}\frac{\partial}{\partial \theta}log f_{joint}(x;\theta)dx_1...dx_n\\
+ &=\int...\int \hat{\theta}\frac{\partial}{\partial \theta} f_{joint}(x;\theta)dx_1...dx_n\\
+ &=\frac{\partial}{\partial\theta}E[\hat{\theta}]\\
+ &=1+\frac{\partial b}{\partial \theta}
+ \end{aligned}
+ \end{equation}
+ Prove b
+   \begin{equation}
+ \begin{aligned}
+E[\frac{\partial^2logL}{\partial\theta^2}]&=\int...\int f_{joint}(x;\theta)\frac{\partial}{\partial \theta}(\frac{\partial f}{\partial \theta f})dx_1...dx_n\\
+&=\int...\int\frac{\partial^2f}{\partial \theta^2}-f_{joint}(x;\theta)(\frac{\partial f}{f\partial\theta})^2dx_1...dx_n\\
+ &=-\int...\int f_{joint}(x;\theta)(\frac{\partial logL}{\partial\theta})^2dx_1...dx_n\\
+ &=-E[(\frac{\partial logL}{\partial \theta})^2]
+ \end{aligned}
+ \end{equation}
+So it is done.
+ \section{6.7}
+ (a)
+ \begin{figure}[ht]
+\centering
+\includegraphics[scale=0.5]{exp}
+\caption{tau distribution}
+\label{fig:label}
+\end{figure}\\
+ (b)
+ We can get the maximum likelihood function:
+ \begin{equation}
+ L=\prod_{i=1}^n\lambda e^{-\lambda t_i}
+ \end{equation}
+ we use $ \frac{\partial logL}{\partial \lambda}=0$ : 
+ \begin{equation}
+ \lambda=\frac{n}{\sum t_i}
+ \end{equation}
+\begin{figure}[htb]
+\centering
+\subfloat[n=5]{%
+\includegraphics[width=.24\textwidth]{n=5}}\hfill
+\subfloat[n=10]{%
+\includegraphics[width=.24\textwidth]{n=10}}\hfill
+\subfloat[n=100]{%
+\includegraphics[width=.24\textwidth]{n=100}}\hfill
+\caption{lambda distribution}
+\label{fig:1}
+\end{figure}
+
+
  
  \section{6.8}
  (a)
@@ -224,6 +274,37 @@ E[\hat{N}_{taxi}^2]&=\sum_{i=N}^{N_{taxi}}\frac{i^2C_{i-1}^{N-1}}{C_{N_{taxi}}^N
  \begin{equation}
  V[\hat{\theta}]>\frac{1}{E[-\frac{\partial^2logL}{\partial\theta^2}]}=\frac{1}{\sum_{i=1}^NE[\frac{n_i}{\theta^2}]}=\frac{\theta}{\sum_{i=1}^Na(x_i)}
  \end{equation}
+ 
+ \section{6.10}
+ According to the 6.9 :
+ \begin{equation}
+ \begin{aligned}
+ \hat{\theta}_{\nu}=\frac{\sum_{i=1}^Nn_i}{\sum_{i=1}^NE_i\epsilon(E_i)L_i}\\
+ \hat{\theta}_{\bar{\nu}}=\frac{\sum_{i=1}^N\bar{n_i}}{\sum_{i=1}^NE_i\epsilon(E_i)L_i}\\
+ \end{aligned}
+ \end{equation}
+ So we can solve:
+  \begin{equation}
+ \begin{aligned}
+ \left\langle q \right\rangle=\frac{3\pi}{8G^2M}(3\theta_{\nu}-\theta_{\bar{\nu}})\\
+ \left\langle \bar{q} \right\rangle=\frac{3\pi}{8G^2M}(3\theta_{\bar{\nu}}-\theta_{\nu})\\
+ \end{aligned}
+ \end{equation}
+ So 
+ \begin{equation}
+  \left\langle \hat{g} \right\rangle=1-\frac{6\pi}{8G^2M\sum_{i=1}^NE_i\epsilon(E_i)L_i}[\sum_{i=1}^N(n_i+\bar{n}_i)]
+ \end{equation}
+ 
+ 
+ \section{6.11}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
