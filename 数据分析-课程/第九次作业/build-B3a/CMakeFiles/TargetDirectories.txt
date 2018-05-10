@@ -1,0 +1,8 @@
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/install.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/list_install_components.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/rebuild_cache.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/edit_cache.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/B3a.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/install/strip.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/install/local.dir
