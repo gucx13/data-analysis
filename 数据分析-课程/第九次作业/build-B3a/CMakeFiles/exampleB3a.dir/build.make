@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a
+CMAKE_SOURCE_DIR = /home/gucxist/workdir/geant4/examples/basic/B3/B3a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a
+CMAKE_BINARY_DIR = /home/gucxist/workdir/geant4/build-B3a
 
 # Include any dependencies generated for this target.
 include CMakeFiles/exampleB3a.dir/depend.make
@@ -58,17 +58,17 @@ include CMakeFiles/exampleB3a.dir/progress.make
 include CMakeFiles/exampleB3a.dir/flags.make
 
 CMakeFiles/exampleB3a.dir/exampleB3a.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/exampleB3a.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/exampleB3a.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleB3a.dir/exampleB3a.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/exampleB3a.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/exampleB3a.cc
+CMakeFiles/exampleB3a.dir/exampleB3a.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/exampleB3a.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/exampleB3a.dir/exampleB3a.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/exampleB3a.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/exampleB3a.cc
 
 CMakeFiles/exampleB3a.dir/exampleB3a.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/exampleB3a.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/exampleB3a.cc > CMakeFiles/exampleB3a.dir/exampleB3a.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/exampleB3a.cc > CMakeFiles/exampleB3a.dir/exampleB3a.cc.i
 
 CMakeFiles/exampleB3a.dir/exampleB3a.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/exampleB3a.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/exampleB3a.cc -o CMakeFiles/exampleB3a.dir/exampleB3a.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/exampleB3a.cc -o CMakeFiles/exampleB3a.dir/exampleB3a.cc.s
 
 CMakeFiles/exampleB3a.dir/exampleB3a.cc.o.requires:
 
@@ -82,17 +82,17 @@ CMakeFiles/exampleB3a.dir/exampleB3a.cc.o.provides.build: CMakeFiles/exampleB3a.
 
 
 CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aEventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aEventAction.cc
+CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aEventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aEventAction.cc
 
 CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aEventAction.cc > CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aEventAction.cc > CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aEventAction.cc -o CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aEventAction.cc -o CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o.requires:
 
@@ -106,17 +106,17 @@ CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o.provides.build: CMakeFiles/exa
 
 
 CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aRunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aRunAction.cc
+CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aRunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aRunAction.cc
 
 CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aRunAction.cc > CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aRunAction.cc > CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aRunAction.cc -o CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aRunAction.cc -o CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o.requires:
 
@@ -130,17 +130,17 @@ CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o.provides.build: CMakeFiles/examp
 
 
 CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3StackingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3StackingAction.cc
+CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3StackingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3StackingAction.cc
 
 CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3StackingAction.cc > CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3StackingAction.cc > CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3StackingAction.cc -o CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3StackingAction.cc -o CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o.requires:
 
@@ -154,17 +154,17 @@ CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o.provides.build: CMakeFiles/e
 
 
 CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3DetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3DetectorConstruction.cc
+CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3DetectorConstruction.cc
 
 CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3DetectorConstruction.cc > CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3DetectorConstruction.cc > CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3DetectorConstruction.cc -o CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3DetectorConstruction.cc -o CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o.requires:
 
@@ -178,17 +178,17 @@ CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o.provides.build: CMakeF
 
 
 CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aActionInitialization.cc
+CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aActionInitialization.cc
 
 CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aActionInitialization.cc > CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aActionInitialization.cc > CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aActionInitialization.cc -o CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aActionInitialization.cc -o CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o.requires:
 
@@ -202,17 +202,17 @@ CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o.provides.build: CMake
 
 
 CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PrimaryGeneratorAction.cc
+CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PrimaryGeneratorAction.cc
 
 CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PrimaryGeneratorAction.cc > CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PrimaryGeneratorAction.cc > CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PrimaryGeneratorAction.cc -o CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PrimaryGeneratorAction.cc -o CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o.requires:
 
@@ -226,17 +226,17 @@ CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o.provides.build: CMak
 
 
 CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o: CMakeFiles/exampleB3a.dir/flags.make
-CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PhysicsList.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o -c /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PhysicsList.cc
+CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o: /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PhysicsList.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o -c /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PhysicsList.cc
 
 CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PhysicsList.cc > CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PhysicsList.cc > CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.i
 
 CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PhysicsList.cc -o CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PhysicsList.cc -o CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.s
 
 CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o.requires:
 
@@ -318,7 +318,7 @@ exampleB3a: /projects/soft/ext/geant4.10.00.p02-install/lib/libG4intercoms.so
 exampleB3a: /projects/soft/ext/geant4.10.00.p02-install/lib/libG4global.so
 exampleB3a: /projects/soft/ext/geant4.10.00.p02-install/lib/libG4clhep.so
 exampleB3a: CMakeFiles/exampleB3a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable exampleB3a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable exampleB3a"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/exampleB3a.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -342,6 +342,6 @@ CMakeFiles/exampleB3a.dir/clean:
 .PHONY : CMakeFiles/exampleB3a.dir/clean
 
 CMakeFiles/exampleB3a.dir/depend:
-	cd /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gucxist/workdir/geant4/build-B3a && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gucxist/workdir/geant4/examples/basic/B3/B3a /home/gucxist/workdir/geant4/examples/basic/B3/B3a /home/gucxist/workdir/geant4/build-B3a /home/gucxist/workdir/geant4/build-B3a /home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/exampleB3a.dir/depend
 

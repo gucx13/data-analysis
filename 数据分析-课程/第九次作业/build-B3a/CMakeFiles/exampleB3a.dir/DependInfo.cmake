@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/exampleB3a.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/exampleB3a.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3DetectorConstruction.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PhysicsList.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3PrimaryGeneratorAction.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3StackingAction.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aActionInitialization.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aEventAction.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/src/B3aRunAction.cc" "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/exampleB3a.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/exampleB3a.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3DetectorConstruction.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3DetectorConstruction.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PhysicsList.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3PhysicsList.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3PrimaryGeneratorAction.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3PrimaryGeneratorAction.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3StackingAction.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3StackingAction.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aActionInitialization.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3aActionInitialization.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aEventAction.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3aEventAction.cc.o"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/src/B3aRunAction.cc" "/home/gucxist/workdir/geant4/build-B3a/CMakeFiles/exampleB3a.dir/src/B3aRunAction.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -41,7 +41,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/qt4/QtCore"
   "/usr/include/qt4/QtGui"
   "/usr/include/qt4/QtOpenGL"
-  "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a/include"
+  "/home/gucxist/workdir/geant4/examples/basic/B3/B3a/include"
   )
 
 # Targets to which this target links.
