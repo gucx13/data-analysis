@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a
+CMAKE_SOURCE_DIR = /home/gucxist/workdir/geant4/examples/basic/B3/B3a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a
+CMAKE_BINARY_DIR = /home/gucxist/workdir/geant4/build-B3a
 
 # Utility rule file for B3a.
 
@@ -71,6 +71,6 @@ CMakeFiles/B3a.dir/clean:
 .PHONY : CMakeFiles/B3a.dir/clean
 
 CMakeFiles/B3a.dir/depend:
-	cd /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles/B3a.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/gucxist/workdir/geant4/build-B3a && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gucxist/workdir/geant4/examples/basic/B3/B3a /home/gucxist/workdir/geant4/examples/basic/B3/B3a /home/gucxist/workdir/geant4/build-B3a /home/gucxist/workdir/geant4/build-B3a /home/gucxist/workdir/geant4/build-B3a/CMakeFiles/B3a.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/B3a.dir/depend
 

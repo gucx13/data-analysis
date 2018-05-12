@@ -1,4 +1,4 @@
-# Install script for directory: /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a
+# Install script for directory: /home/gucxist/workdir/geant4/examples/basic/B3/B3a
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB3a"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/exampleB3a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/gucxist/workdir/geant4/build-B3a/exampleB3a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB3a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/exampleB3a")
     file(RPATH_CHANGE
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gucxist/workdir/geant4/build-B3a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/B3a
+CMAKE_SOURCE_DIR = /home/gucxist/workdir/geant4/examples/basic/B3/B3a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a
+CMAKE_BINARY_DIR = /home/gucxist/workdir/geant4/build-B3a
 
 #=============================================================================
 # Target rules for target CMakeFiles/exampleB3a.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/gucxist/Desktop/data-analysis/数据分析-课程/第�
 CMakeFiles/exampleB3a.dir/all:
 	$(MAKE) -f CMakeFiles/exampleB3a.dir/build.make CMakeFiles/exampleB3a.dir/depend
 	$(MAKE) -f CMakeFiles/exampleB3a.dir/build.make CMakeFiles/exampleB3a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target exampleB3a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target exampleB3a"
 .PHONY : CMakeFiles/exampleB3a.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/exampleB3a.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/exampleB3a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/workdir/geant4/build-B3a/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/exampleB3a.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/workdir/geant4/build-B3a/CMakeFiles 0
 .PHONY : CMakeFiles/exampleB3a.dir/rule
 
 # Convenience name for target.
@@ -103,14 +103,14 @@ clean: CMakeFiles/exampleB3a.dir/clean
 CMakeFiles/B3a.dir/all: CMakeFiles/exampleB3a.dir/all
 	$(MAKE) -f CMakeFiles/B3a.dir/build.make CMakeFiles/B3a.dir/depend
 	$(MAKE) -f CMakeFiles/B3a.dir/build.make CMakeFiles/B3a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles --progress-num= "Built target B3a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/gucxist/workdir/geant4/build-B3a/CMakeFiles --progress-num= "Built target B3a"
 .PHONY : CMakeFiles/B3a.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/B3a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/workdir/geant4/build-B3a/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/B3a.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/Desktop/data-analysis/数据分析-课程/第九次作业/build-B3a/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gucxist/workdir/geant4/build-B3a/CMakeFiles 0
 .PHONY : CMakeFiles/B3a.dir/rule
 
 # Convenience name for target.
