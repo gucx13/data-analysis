@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{axodraw}
+\usepackage[paperwidth=550pt, paperheight=400pt, margin=0pt, top=40pt]{geometry}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\begin{picture}(400,300)(0,0)
+\SetWidth{1.25}
+% Vertices
+\Vertex(140,100){2}
+\Vertex(260,100){2}
+\Vertex(200,100){2}
+\Vertex(275,250){2}
+% W Bosons
+\PhotonArc(200,100)(60,-180,0){7}{6.5}
+% Colour Singlet Exchange
+\DashLine(200,100)(275,250){7}
+% Quarks
+\Line(0,0)(400,0)
+\Line(400,100)(0,100)
+\CArc(325,250)(50,90,270)
+\Line(325,200)(400,200)
+\Line(325,300)(400,300)
+% Triangles
+\GTri(73,0)(67,-3)(67,3){0}
+\GTri(67,100)(73,97)(73,103){0}
+\GTri(333,0)(327,-3)(327,3){0}
+\GTri(327,100)(333,97)(333,103){0}
+\GTri(333,200)(327,197)(327,203){0}
+\GTri(327,300)(333,297)(333,303){0}
+% Ovals
+\GOval(0,50)(50,6)(0){0}
+\GOval(0,50)(48,5)(0){0.8}
+\GOval(400,50)(50,6)(0){0}
+\GOval(400,50)(48,5)(0){0.8}
+\GOval(400,250)(50,6)(0){0}
+\GOval(400,250)(48,5)(0){0.8}
+% Text (Does not Scale)
+\Text(-15,50)[r]{\Huge $B_s^0$}
+\Text(415,250)[l]{\Huge $J/\psi$}
+\Text(415,50)[l]{\Huge $\phi$}
+\Text(260,45)[]{\Huge $W$}
+\Text(35,110)[b]{\Huge $b$}
+\Text(35,-10)[t]{\Huge $s$}
+\Text(365,-10)[t]{\Huge $s$}
+\Text(365,110)[b]{\Huge $s$}
+\Text(365,310)[b]{\Huge $c$}
+\Text(365,190)[t]{\Huge $c$}
+\Text(200,95)[t]{\Huge $u,c,t$}
+\Text(170,200)[t]{\Huge Colour singlet}
+\Text(175,175)[t]{\Huge exchange}
+\Text(200,-40)[]{\Huge (b)}
+\end{picture}
+\end{center}
+\end{document}

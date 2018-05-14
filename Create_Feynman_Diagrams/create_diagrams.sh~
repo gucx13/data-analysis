@@ -1,0 +1,10 @@
+#latex BsJpsiPhi_penguin_example.tex
+latex BsJpsiPhi_tree_example.tex
+rm *.aux
+rm *.log
+#dvips BsJpsiPhi_penguin_example.dvi
+dvips BsJpsiPhi_tree_example.dvi
+#ps2pdf BsJpsiPhi_penguin_example.ps
+ps2pdf BsJpsiPhi_tree_example.ps
+# Remove if want to keep dvi format:
+rm *.dvi
