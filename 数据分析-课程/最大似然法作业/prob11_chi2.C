@@ -47,11 +47,11 @@ void fcn(int& npar , double* deriv, double& f ,double par[] ,int flag){
         
         double pdf = poissonPdf(&x,&y,par);
             
-           
-                lnL += pdf;
-   
-    f= -2.0*lnL;
 
+                lnL += pdf;
+
+    f= -2.0*lnL;
+	}
 }
 
 void prob11_chi2(){
@@ -95,4 +95,5 @@ void prob11_chi2(){
     
     cout<<parName[0]<<"="<<outpar[0]<<"+"<<err[0]<<endl;
     cout<<parName[1]<<"="<<outpar[1]<<"+"<<err[1]<<endl;
+	cout<<"chi-square = "<<amin<<endl;
 }                     

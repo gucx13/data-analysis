@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.4)  8 MAY 2018 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.4)  16 MAY 2018 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -448,7 +448,7 @@ File: n=100.png Graphic file (type png)
 <use n=100.png>
 Package pdftex.def Info: n=100.png  used on input line 214.
 (pdftex.def)             Requested size: 82.8019pt x 56.15652pt.
- [4 <./exp.png>] [5 <./n=5.png> <./n=10.png> <./n=100.png>] [6]
+ [4 <./exp.png>] [5 <./n=5.png> <./n=10.png> <./n=100.png>] [6] [7]
 (./chapter_6.aux) ) 
 Here is how much of TeX's memory you used:
  4812 strings out of 492649
@@ -472,10 +472,10 @@ fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
 r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/
 local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on chapter_6.pdf (6 pages, 282810 bytes).
+Output written on chapter_6.pdf (7 pages, 287135 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
