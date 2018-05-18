@@ -1,0 +1,7 @@
+There are two examples and some instructions in this folder:
+
+  - Bs2JpsiPhi tree and penguin level diagrams (written by K. De Bruyn),
+  - An axodraw manual (axodraw_manual.pdf),
+
+A how-to sequence to be ran can be found inside create_diagrams.sh: note that "latex" (not "pdflatex") should be used (output when using axodraw is dvi format), followed by dvips and ps2pdf if a plot in PDF format is needed.
+

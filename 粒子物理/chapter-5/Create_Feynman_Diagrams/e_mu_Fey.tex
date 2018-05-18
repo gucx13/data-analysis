@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}                                                                                                                                                            
+\usepackage{axodraw}
+\usepackage[paperwidth=600pt, paperheight=400pt, margin=0pt, top=40pt]{geometry}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\begin{picture}(600,300)(0,0)
+\SetWidth{1.25}
+% Vertices
+\Vertex(200,150){3}
+\Vertex(300,150){3}
+% W Bosons
+\Line(300,150)(200,150)
+\Photon(100,50)(200,150){7}{6.5}
+\Photon(300,150)(400,250){7}{6.5}
+\Line(100,250)(200,150)
+\Line(300,150)(400,50)
+\Text(170,225)[r]{\Huge $e^-$}
+\Text(130,100)[r]{\Huge $\gamma$} 
+\Text(350,225)[r]{\Huge $\gamma$} 
+\Text(340,100)[r]{\Huge $e^-$} 
+\end{picture}
+\end{center}
+\end{document}

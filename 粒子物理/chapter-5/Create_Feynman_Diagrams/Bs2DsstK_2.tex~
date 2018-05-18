@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{axodraw}
+\usepackage[paperwidth=550pt, paperheight=400pt, margin=0pt, top=40pt]{geometry}
+\pagestyle{empty}
+\def\Bbar    {{\ensuremath{\kern 0.18em\overline{\kern -0.18em B}{}}}\xspace}
+
+\begin{document}
+
+\begin{center}
+\begin{picture}(400,300)(0,0)
+\SetWidth{1.25}
+% Vertices
+\Vertex(200,200){3}
+\Vertex(300,250){3}
+% W Bosons
+\Photon(300,250)(200,200){7}{6.5}
+% Quarks
+\Line(200,200)(0,200)
+\Line(400,300)(300,250)
+\Line(0,100)(200,100)
+\Line(200,100)(400,0)
+\Line(300,250)(400,200)
+\Line(400,100)(200,200)
+% Triangles
+\GTri(103,200)(97,197)(97,203){0}
+\GTri(97,100)(103,97)(103,103){0}
+% {{3 Cos[\[Alpha] + \[Pi]] + x, 3 Sin[\[Alpha] + \[Pi]] + y}, {3 Cos[\[Alpha] - \[Pi]/4] + x, 3 Sin[\[Alpha] - \[Pi]/4] + y}, {3 Cos[\[Alpha] + \[Pi]/4] + x, 3 Sin[\[Alpha] + \[Pi]/4] + y}} /. {\[Alpha] -> ArcTan[0.5],  x -> 300, y -> 250}
+\GTri(352.7,276.3)(347.2,275.9)(349.1,272.2){0}
+\GTri(347.3,226.3)(350.9,222.2)(352.8,225.9){0}
+\GTri(297.3,51.3)(300.9,47.2)(302.8,50.9){0}
+\GTri(302.7,148.7)(299.1,152.8)(297.2,149.1){0}
+% Ovals
+\GOval(0,150)(50,6)(0){0}
+\GOval(0,150)(48,5)(0){0.8}
+\GOval(400,50)(50,6)(0){0}
+\GOval(400,50)(48,5)(0){0.8}
+\GOval(400,250)(50,6)(0){0}
+\GOval(400,250)(48,5)(0){0.8}
+% Text (Does not Scale)
+\Text(-15,150)[r]{\Huge $\bar{B}_s^0$}
+\Text(415,50)[l]{\Huge $K^+$}
+\Text(415,250)[l]{\Huge $D_s^{*-}$}
+\Text(270,210)[]{\Huge $W^-$}
+\Text(190,225)[]{\Huge $V_{ub}$}
+\Text(300,275)[]{\Huge ${V_{cs}}^*$}
+\Text(-15,190)[b]{\Huge $b$}
+\Text(-15,110)[t]{\Huge $\bar{s}$}
+\Text(415,200)[]{\Huge $\bar{c}$}
+\Text(415,300)[]{\Huge $s$}
+\Text(415,100)[]{\Huge $u$}
+\Text(415,0)[]{\Huge $\bar{s}$}
+\end{picture}
+\end{center}
+\end{document}
