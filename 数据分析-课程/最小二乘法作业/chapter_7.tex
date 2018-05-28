@@ -1,0 +1,287 @@
+
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage{amsmath,amssymb}
+\usepackage{fancyhdr}  
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfig}
+
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+\pagestyle{fancy}  
+\fancyhead{} % clear all fields  
+\fancyhead[R]{Data Analysis}  
+\fancyhead[L]{Chenxi Gu\\ 2017311017} 
+\renewcommand{\headrulewidth}{0.4pt}  
+\renewcommand{\footrulewidth}{0.4pt} 
+
+
+
+\title {chapter 7}
+\author{Chenxi Gu\\2017311017}
+
+\date{\today}
+
+\maketitle
+
+\section{7.1}
+(a)
+For the hypothesis $d=\alpha h$
+\begin{equation}
+\begin{aligned}
+&\alpha =1.66277\\
+&\chi^2=661.99\\
+&P=2.7*10^{-142}\\
+\end{aligned}
+\end{equation}
+
+For the hypothesis $d=\alpha h+\beta h^2$
+\begin{equation}
+\begin{aligned}
+&\alpha =2.79292\\
+&\beta =-0.00135055\\
+&\chi^2=64.7418\\
+&P=5.7*10^{-14}\\
+\end{aligned}
+\end{equation}
+(b)
+For the hypothesis $d=\alpha h^{\beta}$
+\begin{equation}
+\begin{aligned}
+&\alpha =43.7608\\
+&\beta =0.511055\\
+&\chi^2=3.75593\\
+&P=0.289\\
+\end{aligned}
+\end{equation}
+(c)
+For the hypothesis $d=\alpha h^{0.5}$
+\begin{equation}
+\begin{aligned}
+&\alpha =47.0857\\
+&\chi^2=4.20755\\
+&P=0.378\\
+\end{aligned}
+\end{equation}
+
+
+\section{7.2}
+(a)
+if $\sigma_i^2=\lambda_i$:
+\begin{equation}
+\chi^2(\theta,\nu)=\sum_{i=1}^N=\frac{(y_i-\lambda_i)^2}{\lambda_i}
+\end{equation}
+We know $\partial{\chi^2}/\partial{\nu}=0$:
+\begin{equation}
+\begin{aligned}
+&\frac{2}{\nu}\sum_{i=0}^Ny_i-2+\frac{1}{\nu}\sum_{i=0}^N\frac{(y_i-\lambda_i)^2}{\lambda_i}=0\\
+&\nu_{LS}=n+\frac{\chi_{min}^2}{2}\\
+\end{aligned}
+\end{equation}
+
+
+(b)
+if $\sigma_i^2=y_i$:
+\begin{equation}
+\chi^2(\theta,\nu)=\sum_{i=1}^N=\frac{(y_i-\lambda_i)^2}{y_i}
+\end{equation}
+We know $\partial{\chi^2}/\partial{\nu}=0$:
+\begin{equation}
+\nu_{MLS}=n-\chi_{min}^2
+\end{equation}
+
+\section{7.3}
+(a)
+\begin{equation}
+V_{ij}=\left\{
+\begin{aligned}
+ & -np_ip_j\quad(i\neq j) \\
+ & np_i(1-p_i)\quad(i=j) \\
+\end{aligned}
+\right.
+\end{equation}
+We find the N-matrix only have N-1 independent variables, so it doesn't has inverse matrix.\\
+(b)
+\begin{equation}
+V^{-1}_{ij}=\frac{1}{np_N}\left\{
+\begin{aligned}
+ & 1\quad(i\neq j) \\
+ & 1+\frac{p_N}{p_i}\quad(i=j) \\
+\end{aligned}
+\right.
+\end{equation}
+\begin{equation}
+\chi^2=\sum_{i=1}^N\frac{(y_i-np_i)^2}{np_i}
+\end{equation}
+So considering the fit using only the  first N-1 bins is same with N bins.
+
+
+
+\section{7.4}
+(a)
+\begin{equation}
+\rho_{ij}=\frac{V_{ij}}{\sigma_i\sigma_j}\propto 1
+\end{equation}
+The matrix of correlation coefficients is independent of the sample size
+(b)
+\begin{equation}
+\delta_{ij}=\sum_k(V^{-1})_{ik}\rho_{kj}\sigma_k\sigma_j
+\end{equation}
+Both time $(\rho^{-1})_{jm}/\sigma_j$:
+\begin{equation}
+\begin{aligned}
+(\rho^{-1})_{im}/\sigma_i&=\sum_k(V^{-1})_{ik}\delta_{km}\sigma_k\\
+&=(V^{-1})_{im}\sigma_m
+\end{aligned}
+\end{equation}
+We prove it.
+
+\section{7.5}
+(a)
+We know $x_i$ are independent variants.
+\begin{equation}
+cov[x_i,x_j]=0\quad(i\neq j)
+\end{equation}
+There are c variants are commom.
+\begin{equation}
+cov[y_i,y_j]=\frac{c\sigma^2}{mn}
+\end{equation}
+(b)
+\begin{equation}
+V=
+\begin{bmatrix}
+   \frac{\sigma^2}{n} & \frac{c\sigma^2}{mn}  \\
+   \frac{c\sigma^2}{mn} & \frac{\sigma^2}{m}\\
+  \end{bmatrix}
+\end{equation}
+
+\begin{equation}
+V^{-1}=\frac{mn}{\sigma^2(mn-c^2)}
+\begin{bmatrix}
+   n  & -c  \\
+   -c & m\\
+  \end{bmatrix}
+\end{equation}
+\begin{equation}
+\hat{y}=\frac{n-c}{n+m-2c}y_1+\frac{m-c}{n+m-2c}y_2
+\end{equation}
+\begin{equation}
+V[\hat{y}]=V[y_1]+V[y_2]+2\frac{(n-c)(n-c)}{(n+m-2c)^2}cov[y_1,y_2]
+\end{equation}
+
+\section{7.6}
+(a)
+For the hypothesis $\theta_r=\alpha \theta_i$
+\begin{equation}
+\begin{aligned}
+&\alpha =0.666\\
+&\chi^2=134.6507\\
+&P=6.7*10^{-26}\\
+\end{aligned}
+\end{equation}
+For the hypothesis $\theta_r=\alpha \theta_i-\beta \theta_i^2$
+\begin{equation}
+\begin{aligned}
+&\chi^2=1.26*10^{-29}\\
+&P=1\\
+\end{aligned}
+\end{equation}
+(b)
+\begin{equation}
+\begin{aligned}
+&\hat{r} =1.311\\
+&\chi^2=14.14\\
+&P=0.0487\\
+\end{aligned}
+\end{equation}
+So the  0.5 is too small.
+
+\section{7.7}
+(a)
+\begin{equation}
+\chi^2=\sum_{i=1}^N\frac{(n_i-\theta a(x_i))^2}{\theta a(x_i)}
+\end{equation}
+We use $\partial \chi^2/\partial\theta=0$
+\begin{equation}
+\sum_{i=1}^N[a(x_i)-\frac{n_i^2}{\theta^2a(x_i)}]=0
+\end{equation}
+So we can get
+\begin{equation}
+\hat{\theta}=(\frac{\sum_{i=1}^Na(x_i)}{\sum_{i=1}^N\frac{a(x_i)^2}{n_i}})^{0.5}
+\end{equation}
+compute the bias
+\begin{equation}
+\begin{aligned}
+b&=E[\hat{\theta}]-\theta\\
+&=\frac{N-1}{2\sum_{i=1}^Na(x_i)}
+\end{aligned}
+\end{equation}
+
+
+
+(b)
+\begin{equation}
+\chi^2=\sum_{i=1}^N\frac{(n_i-\theta a(x_i))^2}{n_i}
+\end{equation}
+We use $\partial \chi^2/\partial\theta=0$
+\begin{equation}
+\sum_{i=1}^N[a(x_i)-\frac{\theta a(x_i)^2}{n_i}]=0
+\end{equation}
+So we can get
+\begin{equation}
+\hat{\theta}=\frac{\sum_{i=1}^Na(x_i)}{\sum_{i=1}^N\frac{a(x_i)^2}{n_i}}
+\end{equation}
+compute the bias
+\begin{equation}
+\begin{aligned}
+b&=E[\hat{\theta}]-\theta\\
+&=-\frac{N-1}{\sum_{i=1}^Na(x_i)}
+\end{aligned}
+\end{equation}
+
+
+\section{7.8}
+(a)
+Take the standard deviation $\sigma_i^2$ of $n_i$ to be $\nu_i$ (the usual method of least squares).
+\begin{equation}
+\begin{aligned}
+&\nu_0=1845.52+39.4143\\
+&k=(1.19938+0.0327322)*10^{-23}J/K\\
+&\chi^2=4.56885\\
+\end{aligned}
+\end{equation}
+
+(b)
+Take the standard deviation $\sigma_i^2$ of $n_i$ to be $n_i$ (the usual method of least squares).
+\begin{equation}
+\begin{aligned}
+&\nu_0=1843.84+40.2043\\
+&k=(1.19702+0.0342872)*10^{-23}J/K\\
+&\chi^2=4.61863\\
+\end{aligned}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{CJK*}
+\end{document}
