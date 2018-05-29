@@ -1,0 +1,8 @@
+/Users/xuzehua/B3b/build/CMakeFiles/install/local.dir
+/Users/xuzehua/B3b/build/CMakeFiles/install/strip.dir
+/Users/xuzehua/B3b/build/CMakeFiles/install.dir
+/Users/xuzehua/B3b/build/CMakeFiles/list_install_components.dir
+/Users/xuzehua/B3b/build/CMakeFiles/rebuild_cache.dir
+/Users/xuzehua/B3b/build/CMakeFiles/edit_cache.dir
+/Users/xuzehua/B3b/build/CMakeFiles/B3b.dir
+/Users/xuzehua/B3b/build/CMakeFiles/exampleB3b.dir

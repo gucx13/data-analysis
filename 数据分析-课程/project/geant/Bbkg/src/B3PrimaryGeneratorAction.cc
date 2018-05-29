@@ -1,0 +1,161 @@
+//
+// ********************************************************************
+// * License and Disclaimer                                           *
+// *                                                                  *
+// * The  Geant4 software  is  copyright of the Copyright Holders  of *
+// * the Geant4 Collaboration.  It is provided  under  the terms  and *
+// * conditions of the Geant4 Software License,  included in the file *
+// * LICENSE and available at  http://cern.ch/geant4/license .  These *
+// * include a list of copyright holders.                             *
+// *                                                                  *
+// * Neither the authors of this software system, nor their employing *
+// * institutes,nor the agencies providing financial support for this *
+// * work  make  any representation or  warranty, express or implied, *
+// * regarding  this  software system or assume any liability for its *
+// * use.  Please see the license in the file  LICENSE  and URL above *
+// * for the full disclaimer and the limitation of liability.         *
+// *                                                                  *
+// * This  code  implementation is the result of  the  scientific and *
+// * technical work of the GEANT4 collaboration.                      *
+// * By using,  copying,  modifying or  distributing the software (or *
+// * any work based  on the software)  you  agree  to acknowledge its *
+// * use  in  resulting  scientific  publications,  and indicate your *
+// * acceptance of all terms of the Geant4 Software license.          *
+// ********************************************************************
+//
+// $Id: B3PrimaryGeneratorAction.cc 73744 2013-09-09 20:25:07Z asaim $
+//
+/// \file B3PrimaryGeneratorAction.cc
+/// \brief Implementation of the B3PrimaryGeneratorAction class
+
+#include "B3PrimaryGeneratorAction.hh"
+
+#include "G4RunManager.hh"
+#include "G4Event.hh"
+#include "G4ParticleGun.hh"
+#include "G4ParticleTable.hh"
+#include "G4IonTable.hh"
+#include "G4ParticleDefinition.hh"
+#include "G4ChargedGeantino.hh"
+#include "G4SystemOfUnits.hh"
+#include "Randomize.hh"
+#include "G4PhysicalConstants.hh"
+
+#include "B3Analysis.hh"
+#include <cmath>
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+B3PrimaryGeneratorAction::B3PrimaryGeneratorAction(const B3DetectorConstruction* detectorConstruction)
+ : fDetConstruction(detectorConstruction)
+{
+  G4int n_particle = 1;
+  fParticleGun  = new G4ParticleGun(n_particle);
+
+  // default particle kinematic
+#if 0
+  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
+  G4ParticleDefinition* particle
+                    = particleTable->FindParticle("mu-");
+  fParticleGun->SetParticleDefinition(particle);
+  fParticleGun->SetParticlePosition(G4ThreeVector(0.,0.,0.));
+  fParticleGun->SetParticleEnergy(0*eV);    
+  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(1.,0.,0.));
+#endif 
+
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+B3PrimaryGeneratorAction::~B3PrimaryGeneratorAction()
+{
+  delete fParticleGun;
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void B3PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
+{
+//  G4ParticleDefinition* particle = fParticleGun->GetParticleDefinition();
+ 
+ 
+#if 0 
+  if (particle == G4ChargedGeantino::ChargedGeantino()) {
+    //fluorine 
+    G4int Z = 9, A = 18;
+    G4double ionCharge   = 0.*eplus;
+    G4double excitEnergy = 0.*keV;
+    
+    G4ParticleDefinition* ion
+       = G4IonTable::GetIonTable()->GetIon(Z,A,excitEnergy);
+    fParticleGun->SetParticleDefinition(ion);
+    fParticleGun->SetParticleCharge(ionCharge);
+  }
+#endif
+ #if 0
+  // randomized position
+  //
+  ///G4double x0  = 0*cm, y0  = 0*cm, z0  = 0*cm;
+  ///G4double dx0 = 0*cm, dy0 = 0*cm, dz0 = 0*cm;   
+  G4double x0  = 0*cm, y0  = 0*cm, z0  = 0*cm;
+  G4double dx0 = 1*cm, dy0 = 1*cm, dz0 = 1*cm; 
+  x0 += dx0*(G4UniformRand()-0.5);
+  y0 += dy0*(G4UniformRand()-0.5);
+  z0 += dz0*(G4UniformRand()-0.5);
+  fParticleGun->SetParticlePosition(G4ThreeVector(x0,y0,z0));
+#endif
+
+  //create vertex
+  //G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+  
+
+  G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
+  G4ParticleDefinition* particle
+                    = particleTable->FindParticle("neutron");
+  
+  fParticleGun->SetParticleDefinition(particle);
+  fParticleGun->SetParticleTime(0.0*ns);
+
+  double energy = 0.;
+ 
+#if 1
+  while (energy<=0 || energy>10){ 
+  	G4double b = -log(1-G4UniformRand());
+	energy = b;
+  }
+#endif
+
+  G4double pos_x = 20;
+  G4double pos_y = 20;
+  G4double pos_z = 20;
+
+  //G4double R = 16.21;
+  G4double R = 12.87;
+/*
+  while (pos_x*pos_x+pos_y*pos_y+pos_z*pos_z>R*R){
+
+	  pos_x = 2*R*(G4UniformRand()-0.5);
+	  pos_y = 2*R*(G4UniformRand()-0.5);
+	  pos_z = 2*R*(G4UniformRand()-0.5);
+  }
+*/
+
+
+  fParticleGun->SetParticlePosition(G4ThreeVector(-20*m,0*m,0*m));
+  fParticleGun->SetParticleEnergy(energy*GeV);    
+
+
+  G4double x = sin(G4UniformRand()*pi)*sin(G4UniformRand()*twopi);
+  G4double y = sin(G4UniformRand()*pi)*sin(G4UniformRand()*twopi);
+  G4double z = cos(G4UniformRand()*pi);
+  G4ThreeVector pos(x,y,z);
+
+  G4ThreeVector pos_new(1,0,0);
+  fParticleGun->SetParticleMomentumDirection(pos_new);
+
+
+  fParticleGun->GeneratePrimaryVertex(anEvent);
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
