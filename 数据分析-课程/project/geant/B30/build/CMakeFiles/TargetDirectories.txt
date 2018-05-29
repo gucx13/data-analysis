@@ -1,8 +1,8 @@
-/Users/xuzehua/B30/build/CMakeFiles/install/local.dir
-/Users/xuzehua/B30/build/CMakeFiles/install/strip.dir
-/Users/xuzehua/B30/build/CMakeFiles/install.dir
-/Users/xuzehua/B30/build/CMakeFiles/list_install_components.dir
-/Users/xuzehua/B30/build/CMakeFiles/rebuild_cache.dir
-/Users/xuzehua/B30/build/CMakeFiles/edit_cache.dir
-/Users/xuzehua/B30/build/CMakeFiles/B3b.dir
-/Users/xuzehua/B30/build/CMakeFiles/exampleB3b.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/rebuild_cache.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/edit_cache.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/install.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/list_install_components.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/exampleB3b.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/B3b.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/install/local.dir
+/home/gucxist/Desktop/data-analysis/数据分析-课程/project/geant/B30/build/CMakeFiles/install/strip.dir
