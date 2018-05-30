@@ -143,11 +143,12 @@ void B3PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 
   fParticleGun->SetParticlePosition(G4ThreeVector(-20*m,0*m,0*m));
   fParticleGun->SetParticleEnergy(energy*GeV);    
-
-
-  G4double x = sin(G4UniformRand()*pi)*sin(G4UniformRand()*twopi);
-  G4double y = sin(G4UniformRand()*pi)*sin(G4UniformRand()*twopi);
-  G4double z = cos(G4UniformRand()*pi);
+  
+  G4double theta = G4UniformRand()*pi;
+  G4double phi = G4UniformRand()*twopi;
+  G4double x = sin(theta)*cos(phi);
+  G4double y = sin(theta)*sin(phi);
+  G4double z = cos(theta);
   G4ThreeVector pos(x,y,z);
 
   G4ThreeVector pos_new(1,0,0);
