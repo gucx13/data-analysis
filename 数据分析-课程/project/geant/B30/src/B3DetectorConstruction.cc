@@ -91,8 +91,8 @@ G4VPhysicalVolume* B3DetectorConstruction::Construct()
   //G4double cosdPhi = std::cos(half_dPhi);
   //G4double tandPhi = std::tan(half_dPhi);
   // 
-  G4double ring_R1 = 16.21*m;
-  G4double ring_R2 = 12.87*m;
+  G4double ring_R1 = 14.05*m;
+  G4double ring_R2 = 11.15*m;
   //
   //G4double detector_dZ = nb_rings*cryst_dX;
   //
