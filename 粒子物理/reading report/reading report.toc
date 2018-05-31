@@ -11,13 +11,21 @@
 \contentsline {paragraph}{{Kaon}}{4}{subsection.1.8}
 \contentsline {paragraph}{{$\eta $ meson}}{4}{subsection.1.8}
 \contentsline {paragraph}{{$\rho $ meson}}{4}{subsection.1.8}
-\contentsline {section}{\numberline {2}{Decay Model}}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}{Strong Decay}}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}{Weak Decay}}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}{Electromagnetic Decay}}{4}{subsection.2.3}
-\contentsline {section}{\numberline {3}{Particle in the Detector}}{4}{section.3}
-\contentsline {section}{\numberline {4}{Summary and Discussion}}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}{Subsection}}{5}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}{Subsubsection}}{5}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}{Table}}{6}{subsubsection.4.1.2}
-\contentsline {subsection}{\numberline {4.2}{Figure Composed of Subfigures}}{6}{subsection.4.2}
+\contentsline {paragraph}{{$\omega $ meson}}{4}{subsection.1.8}
+\contentsline {paragraph}{{$\phi $ meson}}{4}{subsection.1.8}
+\contentsline {paragraph}{{$\Sigma $ baryon}}{5}{subsection.1.8}
+\contentsline {paragraph}{{$\Xi $ baryon}}{5}{subsection.1.8}
+\contentsline {paragraph}{{$\Lambda $ baryon}}{5}{subsection.1.8}
+\contentsline {paragraph}{{$\Delta $ baryon}}{5}{subsection.1.8}
+\contentsline {paragraph}{{$\Sigma (1385)$ baryon}}{5}{subsection.1.8}
+\contentsline {paragraph}{{$\Xi (1530)$ baryon}}{5}{subsection.1.8}
+\contentsline {section}{\numberline {2}{Decay Model}}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}{Strong Decay}}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}{Weak Decay}}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}{Electromagnetic Decay}}{6}{subsection.2.3}
+\contentsline {section}{\numberline {3}{Particle in the Detector}}{6}{section.3}
+\contentsline {section}{\numberline {4}{Summary and Discussion}}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}{Subsection}}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}{Subsubsection}}{6}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}{Table}}{7}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}{Figure Composed of Subfigures}}{7}{subsection.4.2}
