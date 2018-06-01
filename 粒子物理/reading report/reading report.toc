@@ -19,10 +19,11 @@
 \contentsline {paragraph}{{$\Delta $ baryon}}{5}{subsection.1.8}
 \contentsline {paragraph}{{$\Sigma (1385)$ baryon}}{5}{subsection.1.8}
 \contentsline {paragraph}{{$\Xi (1530)$ baryon}}{5}{subsection.1.8}
-\contentsline {section}{\numberline {2}{Decay Model}}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}{Strong Decay}}{6}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}{Weak Decay}}{6}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}{Electromagnetic Decay}}{6}{subsection.2.3}
+\contentsline {paragraph}{{mass}}{5}{subsection.1.8}
+\contentsline {section}{\numberline {2}{Decay Model}}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}{Strong Decay}}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}{Electromagnetic Decay}}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}{Weak Decay}}{6}{subsection.2.3}
 \contentsline {section}{\numberline {3}{Particle in the Detector}}{6}{section.3}
 \contentsline {section}{\numberline {4}{Summary and Discussion}}{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}{Subsection}}{6}{subsection.4.1}
