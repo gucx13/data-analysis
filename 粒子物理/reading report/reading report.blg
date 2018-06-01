@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: reading report.aux
+The style file: unsrt.bst
+Database file #1: sample.bib
+Warning--entry type for "Yano:2310803" isn't style-file defined
+--line 1 of file sample.bib
+I was expecting a `,' or a `}'---line 164 of file sample.bib
+ :       title         = "
+ :                        {Production of $\Sigma(1385)^{\pm}$ and $\Xi(1530)^{0}$ in
+I'm skipping whatever remains of this entry
+Warning--empty institution in Aaij:2317224
+Warning--empty author in ALICE-PUBLIC-2018-004
+Warning--empty journal in ALICE-PUBLIC-2018-004
+Warning--empty author in CMS-PAS-HIN-16-013
+Warning--empty title in Abelev:1709031
+Warning--empty journal in Abelev:1709031
+Warning--empty year in Abelev:1709031
+You've used 12 entries,
+            1791 wiz_defined-function locations,
+            526 strings with 9123 characters,
+and the built_in function-call counts, 4497 in all, are:
+= -- 184
+> -- 614
+< -- 4
++ -- 212
+- -- 200
+* -- 521
+:= -- 902
+add.period$ -- 36
+call.type$ -- 12
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 94
+empty$ -- 218
+format.name$ -- 200
+if$ -- 819
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 7
+newline$ -- 63
+num.names$ -- 10
+pop$ -- 28
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 29
+stack$ -- 0
+substring$ -- 120
+swap$ -- 10
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 15
+width$ -- 14
+write$ -- 131
+(There was 1 error message)
