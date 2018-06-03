@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.16)  1 JUN 2018 13:25
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.16)  4 JUN 2018 01:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -116,7 +116,7 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-No file "chapter 6".aux.
+(./chapter 6.aux)
 \openout1 = `"chapter 6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -197,6 +197,7 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/cjk/texinput/standard.bdg
 File: standard.bdg 2015/04/18 4.8.4
 )
@@ -217,15 +218,15 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-]
+] [2]
 (./chapter 6.aux) ) 
 Here is how much of TeX's memory you used:
- 2283 strings out of 493068
- 24809 string characters out of 6135636
- 82717 words of memory out of 5000000
- 6213 multiletter control sequences out of 15000+600000
- 8325 words of font info for 37 fonts, out of 8000000 for 9000
+ 2295 strings out of 493068
+ 24943 string characters out of 6135636
+ 85717 words of memory out of 5000000
+ 6221 multiletter control sequences out of 15000+600000
+ 10024 words of font info for 45 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 27i,6n,43p,228b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,43p,228b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter 6.pdf (1 page).
+Output written on chapter 6.pdf (2 pages).
