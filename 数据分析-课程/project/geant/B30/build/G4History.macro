@@ -37,4 +37,4 @@ create OGL
 /vis/viewer/set/style surface
 /vis/viewer/refresh
 /gun/particle mu-
-/run/beamOn 1000
+/run/beamOn 10
